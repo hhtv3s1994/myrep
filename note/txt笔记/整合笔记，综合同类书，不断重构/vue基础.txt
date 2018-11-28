@@ -1,0 +1,128 @@
+一、根实例 1、new Vue()2、选项对象{}  3、数据对象和属性 data:{} 4、方法对象和属性 method:{} 5 、实例的属性等于选项的属性 vm.a  后加入的实例属性无效
+
+6、data对象里面也可以是对象，避免大量中转数据
+
+预定义实例方法：全局对象，全局属性 vm.$data vm.$el
+
+this指向vm实例,在方法，计算属性，监听器内调用this.data属性
+
+实例生命钩子 创建更新销毁时自动调用 created:function(){}  mounted、updated  destroyed 
+
+模板语法：数据插值{{data+表达式}} 插在普通子元素文本域， <v-once> 一次性插值 v-html 插入html 数据和元素属性绑定v-bind:属性（原属性或者prop）=data表达式
+
+指令：v-if=data 参数v-bind:href v-on:click 修饰符.prevent   缩写: :href  @click  
+
+计算属性：计算对象 computed：{属性名:function(){return data}} {{计算属性}} 和方法不同是属性依赖    也可以 属性名：{get： set:}
+
+侦听属性：侦听对象watch：{被监听的数据:function(){修改自己或其他数据 }}
+
+
+class和style绑定:  bind:class  绑定值为一个对象 {类名1:数据1 类名2:数据2 }  数据值为ture/false  
+绑定一个对象数据 可以不用中转数据   class="对象名"  data:{对象名：{类名:true}}, 也可以绑定一个数组[数据1，数据2]data:{数据：类名;}
+
+ 使用组件class="新类名"    
+
+绑定bind:style="{css属性名:数据1，css属性2:数据2 }"   也可以绑定一个样式对象不用中转数据  style="对象名"   data:{对象：{css属性名：值，属性2:值}}也可以绑定一个数组
+
+条件渲染：控制元素或组件的渲染与否（显示消失） v-if="数据" v-else v-else-if v-show
+
+列表渲染: v-for="变量值 in 数据（一般是数组或者对象)"  （item，index） in 数据   也可以of   对象迭代(key,value,index) of 数据  {{value}}
+ v-bind:key="item.id"
+
+数组更新检测，调用.push()pop()shift()unshift()splice()sort()reverse()  变异方法：改变原数组，非变异ilter(), concat() 和 slice()，用新数组替换原组
+
+无法检测对象属性的增加减少 只能给数据对象增加响应属性  Vue.set(数据对象, key, value) 
+
+数组数据的过滤/排序:不改变原数据，计算属性返回
+
+次数循环v-for="n in 10"   <template v-for/if > 多个元素
+
+组件v-for：定义时   外部使用时 绑定prop="父数据" 可以绑定同名数据     is=""
+
+
+事件处理v-on:事件名="方法或data表达式"   "方法(参数)"   "方法(参数，$event)"    
+修饰符 .stop.prevent.capture捕获 .self自身 .once   .passive 立即触发   
+v-on:keyup.键值  .enter.tab.delete.esc.space.up.down.left.right   Vue.config.keyCodes.f1 = 112   <input @keyup.page-down="onPageDown">
+
+.ctrl.alt.shift.meta    .exact限制单键
+
+鼠标：.left .right .middle
+
+表单输入绑定:v-model="data"  value、checked、selected被忽略，实际上是v-bind:prop（此处是value，checked等)="data"   v-on:事件（input） 的结合
+文本 多行   复选框 单选框  的value 和checked   选择框        多选select checkbox 绑定到数组    v-for select
+
+
+值绑定   让value动态,这样data就绑定了动态值   复选 true-value= false-value=   单选 v-bind:value  选择框:value={对象属性}
+
+v-model.lazy change后触发 .number转换为数字 .trim 去除首尾字符
+
+
+
+自定义输入组件。（父子兄弟）
+
+
+组件全局注册 Vue.component('组件名', { 选项 template: '<div v-for v-if>{{a }}</div>'   data:function(){return { 数据属性 }}  methods:   })     <组件  属性="值"  包括v-if等> 
+
+
+
+局部注册   new Vue({  components:{ '组件对象名':{组件选项} }
+
+
+组件组合 父到子prop 子到父  子定义事件     
+
+prop  子组件选项声明  props:["属性名"]    prop实际上是组件自定义的元素属性（也可以覆盖原特性） 模板中驼峰要换成下划线
+
+定义 <  prop属性名="值">   插值等 {{ prop属性名 }}         静态使用: <prop属性="字符串" >   动态使用:子组件< v-bind:prop属性="父data" >   数字需要用v-bind:="表达式"
+
+
+ 
+v-bind="对象"       
+ 
+
+子组件中使用传入的prop属性值, 定义新data或computed   
+
+prop验证  props{属性名:类型 Number String   属性{type: ,required:true,default:  validate:function（）{} }   }   只规定类型/除了类型还有必须和默认值
+
+String
+Number
+Boolean
+Function
+Object
+Array
+Symbol
+
+
+
+
+
+不定义prop，直接在子组件上写新属性    
+替换合并现有prop
+
+子定义事件:子 v-on:click="子方法"   子方法: this.$emit('事件名')    父组件 v-on:自定义事件="父方法或data表达式"
+载荷数据this.$emit('事件名',{载荷数据名=this.子data})         使用时   父v-on:自定义事件="父函数"   方法: function (payload){payload.载荷数据名 }
+
+
+v-bind.sync 修饰符 双向绑定prop 实际上是
+
+
+使用自定义事件的表单输入组件  v-model实际是v-bind：prop="数据"
+v-on:input
+
+单选框和复选框 的props{checked  value}   model:{ prop:checked  event:change }
+
+	
+非父子通信，用bus实例触发组件a事件，b中 
+
+
+
+插槽  放在组件中间的内容应该在什么位置，这里的内容属于父组件
+<组件> 内容</组件> 
+定义时加入插槽<slot>  插槽内为备用内容
+
+具名/命名插槽 <slot name=""> 
+
+
+作用域插槽
+
+   
+组件声明和使用时的数据绑定

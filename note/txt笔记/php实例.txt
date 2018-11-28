@@ -1,0 +1,5 @@
+字符串 s[$i]  
+随机字符串  词首字大写ucwords(串)
+
+逗号分隔符CSV生成fputcsv(组) 输出csv文件 输出csv流 解析csv fgetcsv(句柄)  定宽字段 pack  解析定宽字段    分隔字符串为数组explode(分隔符，串)   
+自动换行 wordwrap(串，行长)  

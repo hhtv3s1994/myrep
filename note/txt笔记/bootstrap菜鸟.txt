@@ -1,0 +1,12 @@
+基于多类
+
+一、移动优先<meta name="viewport" content="width=device-width">  禁用缩放
+
+响应式图像 class=img-responsive" 居中"center-block"
+
+全局（body） 大小14px 行高1.4 字色 33333 
+
+跨浏览器
+
+二、响应式网格，div容器-div行-div列-内容 最多分为十二列，可横跨多列，屏幕越大列越多 优先更小宽度  容器"container"    "row"  "col"  2、列媒体查询  col-xs-4 超小 xs
+小sm 中md 大lg  3、列重置 "clearfix" 响应式工具  4、列偏移 col-md-offset-列数 5、列嵌套 列中还能有行  6、列排序 col-md-push-5 pull 

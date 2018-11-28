@@ -1,0 +1,45 @@
+语法synax   empty()
+
+php数组是有序 字典 集合 栈 
+
+readfile()
+
+设置cookie setcookie("键"，"值")   
+
+给数组赋值list(1,2,,3)=组   返回指针指向元素键/值each(数组)    数组指针 current（组）当前  key()   重置reset()
+
+
+数组处理 返回值数组array_values(组)  返回键数组array_keys(组) in_array(值，组，是否比较类型) array_search( )
+
+返回各值次数数组array_count_values(组)  返回不重复数组array_unique(组)
+
+交换键值array_filp(组) 
+
+回调与递归
+
+字符串填充str_pad(串，新长度，填充字||填充位置) 字符串反转strrev（串）   转换为html实体 htmlentities(串) md5转码 md5(串) 字符串视为数组$a{0}
+
+正则 正则匹配preg_match()  
+
+
+
+返回时间戳mktime(时,分,秒,月，日，年) 字符转时间strtotime() data() 
+
+
+文件读取模式  只读 只写 读写 二进制 文本
+
+文件可读 复制copy(文件名，地址文件名）
+
+是文件is_file(文件地址)  是目录is_dir(地址)  文件类型filetype(地址) 创建时间filectime(地址) 修改时间filemtime(地址) 访问时间fileatime(地址） 属性stat(地址)   目录指针 
+
+
+
+磁盘剩余 disk_free_space() 磁盘大小disk_total_space() 
+
+缓冲  
+
+文件指针  ftell(句柄)   指针到开头rewind(句柄)  改变指针fseek(句柄，位置) 重命名rename(地址，新名字) 
+写is_writable(路径) 可读is_readable() 是上传文件
+
+
+唯一索引 主键 常规索引  全文索引

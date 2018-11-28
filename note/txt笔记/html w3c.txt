@@ -1,0 +1,83 @@
+一、文档类型<!doctype html>
+
+
+二、元素标签属性（或称特性) 
+类 id 样式  额外信息title
+文档<html>头<head>体<body>
+
+
+换行<br>
+段落<p>
+链接<a>
+标题<h1>~<h6>
+水平线<hr>
+注释<!---->
+
+三、文本格式化
+1、 粗体<b> 强调(斜)<em>  斜体<i> 小号<small> 加重<strong> 上标<sup> 下标<sub>  插入<ins> 删除<del>
+2、计算机输出 代码<code> 键盘码<kbd>  样本<samp> 变量<var> 预格式<pre> 
+3、引用 缩写<abbr> 地址<address> 文字方向<bdo>  长引用<quote> 短引用<q> 引证<cite> 自定义<dfn>
+
+四、链接<a> 1、href="url"  2、target="_blank"  _top     3、id  href="#id"或href="url#id" 4、图片链接 5、电子邮件链接
+
+五、头部 1、文档标题<title> 2、默认链接<base href>  a链接的默认值 3、链接外部资源<link> 4、元信息<meta> 字符编码charset
+
+六、CSS  
+
+七、图像<img> 1、源 src 2、 替换文本 alt 3、宽高 4、排列 5、浮动 6、图像链接<a><img> 7、图像映射 <img><map><area>  name  形状shape 圆方 href  coords="124,58,8"
+
+八、表格 表格<table>表头 <th> 表行<tr> 标题注释<caption> 单元格<td> 列<col> 列组 <colgroup>   页眉<thead> 主体<tbody>    
+
+表格边框 border="1"  表格跨行列 colspan="2" rowspan="2"  格边距 cellpadding 格间距cellspacing
+
+九、列表 1、无序<ul> 有序<ol>  定义<dl> 定义项<dt> 描述<dd>2、类型 编号，大小写字母，罗马数字，点圈方  
+
+十、块， 块级元素<div>内联元素<span>
+
+十一、布局  div布局  固定布局 流式（百分比）布局 浮动布局 定位布局 弹性布局  网格布局
+
+十二、表单  1、输入框 <input> 2、输入类型 文本text  密码password 单选按钮radio 复选框checkbox 按钮button  提交submit 重置reset 4、文本域 <textarea>
+5、表单属性 名name 用于后端接收 值value  checked     6、下拉列表和选项 <select><option> <datalist>  7、标签 <label> 8、表单框和框标题<fieldset><legend>   6、action 提交后将表单的名值对发送到该url，以查询字符串形式(get)或请求体形式(post)    
+
+十三、框架 1、源 src="url" 2、宽高  3、边框frameborder="0" 4、 作为链接目标 <a target>
+
+十四、颜色 ： 1、RGB 2、颜色名 3、# 颜色值 4、灰度  5、透明色 rgba() transparent
+
+十五、脚本  1、<script> <noscript> 2、源 src
+
+十六、字符实体 尖括号<> &lt &gt   不间断空格 &nbsp （no-break space)   音标  
+
+十七、URL  1、格式scheme://host.domain:port/path/filename   协议服务 主机 域名 端口（默认80） 路径 文件名   2、字符编码只能用ASCII，其他字符需要编码% 
+
+
+
+HTML5
+一、媒体 <media> 
+
+二、插件<object data>   <embed src> 
+
+三、语义元素 文章<article> 侧边栏<aside>  自定义方向文本<bdi> 命令<command> 细节<details>  <summary> 对话框<dialog>
+
+<figure>  <figcaption>  页脚<footer>  文档头<header>  标记<mark>  导航<nav> 进度<progress> 节<section> 时间<time>  度量衡<meter>
+
+四、浏览器支持
+
+五、Canvas  1、<canvas>  id 宽高  2、 上下文对象=元素.getContext('2d')    3、 绘图方法   绘图游标.moveTo() 样式.fillStyle颜色图像渐变   .lineTo()   勾线和填充 .stoke()
+.fill()   .arc()  4、文本绘制 .font .strokeText  5、渐变  创建渐变对象  加入过渡颜色  渐变用于样式 5、图像.drawImage(url/img对象,x,y)
+
+六 SVG 1、命名空间 xmlns=""2、版本
+
+七、MathML  数学表达式
+
+八、拖放  1、可拖放性 2、事件ondrga
+
+九、视频 1、<video> <source src> 2、属性 宽高  3、事件
+
+十、1、输入类型  颜色color  日期 data  日期时间   email   月份month  数字number  范围 range 搜索search 电话tel 时间time url 周week  2属性 禁用disabled 最大（小）值max  最大长度maxlength  模式（正则）pattern  只读readonly 必需required 合法间距step  默认值value
+
+十一、表单 1、 可输入选择框<datalist>  密钥生成器<keygen>     <output> 2、属性:自动完成 autocomplete 无验证 novalidate 自动聚焦 autofocus 属于的表单 form  MIME类型enctype    多个值（文件）multiple   输入框提示placeholder
+
+十二、web存储  localStorage  sessionStorage 对象  1、直接设置 localStorage.键="值"  2、方法  获取.getItem(键) 设置 .setItem(键，值) 删除.removeItem(键) 清除.clear()
+获取索引的值 .key（索引）
+
+十三

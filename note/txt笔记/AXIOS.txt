@@ -1,0 +1,13 @@
+1、引入 npm或js  
+2、请求对象，响应对象 错误对象
+3、请求 axios.get("url+查询字符串").then(function(response){})
+.catch(function(error){});
+查询字符串可以用对象形式.get(url,{名:值，名:值}）4
+4、POST  .post(url,{内容})
+5、并发请求  把多个get写成函数 函数名（）{return axios.get(){}}
+然后axios.all([函数1,函数2,函数3]).then(axios.spread(function(){ }   )) 
+6、另一种写法  axios({请求方法，url，data:{} }) 
+7、请求别名 .request() .get().post() .delete 
+8、请求配置（除了url都有默认值）
+9、响应
+10、修改默认配置

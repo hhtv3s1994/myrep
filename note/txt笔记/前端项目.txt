@@ -1,0 +1,3096 @@
+前端项目
+
+第1章 快速开发工具
+
+
+第2章 调试
+
+
+第3章 emet等工具插件
+分组平级，可以实现组平级，分组后以父元素为主
+
+元素观察插件
+dom树图形化插件
+
+emmet livestyle  即时更新样式  必须在node中用
+
+
+curl
+
+browser sync  node插件
+
+start --server 1
+nodemon
+实时刷新  监控文件修改,在浏览器中刷新
+zenpto
+
+
+
+
+侧边栏工具
+控制台(cmd工具)terminal  太方便了直接当前目录cst
+hayaku    css 缩写集合自动补全跨浏览器
+
+
+sublime repl可以用来运行
+
+自动文件路径  autofilename取色器
+
+自适应方案，pc手机  平板
+
+代码格式化html  css jspretiffy  es6方法简写没格式化
+vetur   vutur的配置
+
+自动转换css  px为rem
+
+自动格式化  editorconfig
+文件比较
+csscomb给css属性排序
+alignment   把等号放中央对齐
+删除多余空格  空行
+docblock   注释中写文档，引用变量 参数
+
+
+物质结构
+
+代码压缩   兼容性工具
+
+
+编译监听  保存就显示  热重载
+
+代码格式化插件，自动排列 
+
+jsformat
+等号对齐，删除空格
+
+node  jq代码提示
+
+自动补前缀的插件  也可以在webpack中直接使用
+
+
+eslint   代码错误提示sublimelinter
+csslint
+
+html元素常用属性
+css常用属性
+
+sublime code intel激活
+
+emmet元素重命名，增加删除属性?
+
+能不能收缩和补写属性?
+js缩写   emmet缩写
+
+前缀 webkit mos moz o
+
+渐变lg()
+css数值   多个值-相连   单位  百分p px默认 em ex
+色彩#
+
+
+书写的插件，快速生成
+展开缩写   测试文本
+
+扩展缩写功能(在原来的元素上增加)，可以在任何地方插入   
+如何扩展属性?
+如果省略元素是否会自动添加?
+
+
+观察代码和提示的插件   代码提示智能插件
+可视化的插件
+调试的插件
+emmet   元素   类  id    文本插值   多个属性和值[]
+重复元素 累加
+css需要加:
+
+父元素    括号分组
+
+构建工具  。编译   整合资源js css 
+
+
+
+逐词移动   逐句移动  快速上下行  快速选择
+
+撤销
+
+选择所有相同词
+
+删掉左边所有   c  s del
+
+拖动选择，shift加方向左右   
+上下选择多行
+pgup  pgdn顶底    home end行首尾  加s选到首尾
+
+c  左右  跳词    w规则
+cs左右  跳词并选择
+cs 上下整行换位
+alt和上面一样   as左右
+ca  上下  在多行进行同时编辑  适合写一样的内容
+选择当前行无视位置c l
+选择当前单词无视位置 c d 连续按可以选择相同词同步修改
+
+修改标签  cs  反引号
+cs a   选择  父容器  连续按会多层
+选择括号里  csm
+直接缩进本行c  ]
+移除父标签cs;
+删除行 csk
+直接注释掉一行c/
+快速删除
+
+
+
+
+好用的css界面库，js功能库特效库
+
+javascript completion
+
+emmet   
+emmet css snippets 
+
+CSS Extended Completions
+Sass就装Sass，Sassbuild，
+
+
+html css
+缩写智能提示   注意插件冲突
+
+emmet要记缩写吗    还是用智能提示呢？
+
+
+js之类语言的有什么好用的插件吗?
+
+
+
+
+
+
+php快速开发工具  智能提示   调试堆栈 
+
+第4章 所有的模块功能需求
+流行的字体 大小    框子百分比
+
+布局的形式  撑满   对齐  左右中顶底   
+
+视差滚动
+
+移动框架   css设置
+
+
+用户体验和美感，学会使用图片素材，图片的缩放排列，百分比，位置，裁剪
+
+过滤非法字符再验证
+
+响应式
+
+多层嵌套
+
+
+参考框架   积累典型网页案例，包括网页端和移动端
+
+多列应该使用吗!
+
+所有功能其实可以用库解决，要学会自己做
+找库模仿
+购物车
+分割线
+分栏  分行
+小图标小部件
+
+日期选择
+
+纵横导航    分页模块  进度条  点赞
+
+css框架   动画框架animation    
+
+css类，一个类用在多个元素，一个元素使用多类，类的覆盖，继承与优先级
+
+
+按钮连接图片链接
+带小图标的链接
+
+卡片
+滑动门  手风琴  面包屑
+
+块状显示   行内。 无内容的元素  隐藏
+
+二列布局  三列布局
+
+下拉菜单
+
+父子级百分比的控制机制，宽高边距外边距为了间隔，内边距为了内部布局
+富文本编辑器
+视差滚动  隐藏头部  类管理  表单验证
+
+文件上传    预览  图片修改
+
+ 模态和弹出  图像处理
+
+表格  网格
+
+
+
+第5章 中文化思维
+
+
+第6章 适合安卓点击的文本编辑器
+触控符合安卓习惯
+
+语法高亮
+方便的快速复制，粘贴
+代码提示功能   按键秒输入默认词
+快速编辑  快速选择 词 多词 行  多行  括号内
+
+快捷符号栏
+
+第7章 css快速布局属性顺序
+带边框的调试
+
+多列   
+多层
+栅格系统
+简单库   和复杂的库
+各种功能库，必须带文档
+宽度xs
+
+loading动画库
+
+
+各组件推荐的css属性顺序，封装成class
+
+第8章 遍历字符串名
+
+
+第9章 高仿项目和网页总结
+饿了么
+云音乐
+
+知乎日报
+豆瓣
+
+第10章 css用scss快速
+
+
+第11章 积累库   熟悉方法
+
+
+第12章 类md的设计
+
+
+第13章 脚本之家csdn
+
+
+第14章 eslint自动修复
+
+
+第15章 类型判断方法
+数字
+非数字
+数字范围
+
+isNaN
+
+
+
+第16章 模板开发
+
+
+第17章 兼容测试工具
+不同厂商   不同分辨率
+
+
+不用用户代理，用功能检测Modernizr
+
+autoprefixed
+
+第18章 运用
+
+
+第19章 es6实用功能
+如何获取对象构造  typeof缺陷   object.prototypeof.tostring.call  null  undefined
+
+函数.tostring
+
+方法名
+遍历for of  keys
+
+解构  数组和对象，都可以分离出内部值到外部变量或者新结构中(可以仍然是数组，对象，也可以是新值)
+
+解构用于返回值，参数
+
+扩展运算符   和解构接合
+
+set去重，转为数组
+
+object  比较相等object.is
+
+代理
+
+反射
+
+object
+
+二进制数组
+
+迭代器   遍历器对象
+
+承诺   生成器   .next  语句值  结束标签
+
+协程
+
+thunk函数   
+异步函数  返回承诺
+
+
+
+第20章 excel 属性 csv转json
+
+
+第21章 事件创建发送侦听
+创建事件对象，设置事件属性
+
+侦听事件对象，触发回调(可以是其他对象的回调方法)，回调自动将事件对象evt传入
+
+回调获取event    target和其他信息
+
+第22章 blob
+
+
+第23章 博客中学习项目需求
+vue全局属性  $.emit   refs
+
+
+用对象或者json保存多个属性的字段，用对象数组保存重复的对象
+
+转换为字符串  转换为数字  字符串截断转换为数组   数组转换为字符串
+
+成千上万的需求
+点页码换页面
+
+登录验证
+
+prop设为已存在的属性如idclass等
+拿数据
+
+
+foreach(fn)
+
+第24章 动画效果
+
+
+第25章 php与后端
+数字补零   截取字符串如url
+
+第26章 vue中引用全局对象
+
+
+第27章 样式分离，功能分离
+css   js
+
+第28章 布局
+尺寸是布局核心
+
+有高度的盒子才能浮动，避免坍塌用内容撑高用clearboth   导致margin失效
+
+浮动元素会被无视  文档流  没脱离文本流
+
+：浮动布局的核心就是让元素脱离普通流，然后使用width/height，margin/padding将元素定位。
+
+margin用于兄弟，父子用padding撑
+
+
+浮动不设width就会收缩到内容宽度
+
+浮动流  普通流
+浮动影响的是后面的元素
+
+行高
+
+
+圣杯布局  双飞翼布局
+
+
+flex布局一维  grid二维
+
+父元素高度坍塌
+
+
+关于盒子模型  内容宽高  边距  对于浮动的影响
+
+关于clear
+
+
+inlineblock    position   flex   
+
+
+自动转块状元素
+
+行内元素   宽高   边距   行高  垂直对齐
+
+内容溢出
+
+第29章 css复制粘贴布局
+
+
+第30章 做全函数功能demo
+
+
+第31章 简历有中断期
+创业公司去工作了一年
+
+
+进行游戏开发
+
+第32章 如何谈项目经验
+
+
+第33章 页面部件
+部件以及部件关联的数据  属性方法事件
+layui  bs  element  mintui  vux  md   jq 
+等等
+
+
+一个页面需要的功能点，不能有遗漏。url解析，
+
+
+和class绑定简单实现复用
+
+css的class分离，把样式，布局，功能分离
+span中小图标
+
+css中的  子元素选择，  伪类实现动态变化合适吗?
+
+客服  返回顶部(窗口固定部件)
+
+颜色感，常用搭配
+
+常用动画
+
+按钮插图标  常用小图标
+导航滑块
+toast   提示框  带图标
+下拉刷新
+无限滚动
+messagebox
+分页
+表格
+颜色选择器colorpicker
+进度条  loading
+日期选择器
+轮播图
+图片懒加载
+滑块range
+文件上传
+评分
+
+
+顶部导航(固定)  水平垂直侧边
+选项卡
+按钮
+搜索框
+
+第34章 常用代码封装 类
+
+
+第35章 实战视频知识点
+购物车   组件和图片懒加载
+日期过滤器
+
+mockjs
+
+尚硅谷
+
+git版本控制
+
+第36章 总结常用方法名，变量
+
+
+第37章 前后端源码总结
+
+
+第38章 事件handler传参
+内部再调用一个函数，带上事件参数
+
+第39章 全局监听局部事件等冒泡
+
+
+第40章 交互demo
+
+
+第41章 css伪类和选择器交互
+
+
+第42章 electron  ipc  remite
+
+
+第43章 scoped样式属性
+
+
+第44章 改变class类，
+
+
+第45章 css交互
+
+
+第46章 log和注释插件
+
+
+第47章 看快速入门书，再看大书
+
+
+第48章 mockjs模拟数据
+
+
+第49章 php
+命名空间    / 来使用
+
+第50章 swoole
+
+
+第51章 循环绑定
+因为绑定的函数未执行
+
+它内部的i 实际上没有定义在内部，所以没能保存内部状态，只能向外求值   求到的是全局var的  i
+
+
+可以把onclick=fnc用立即匿名执行函数包裹起来，这样会保存外层函数的内部变量
+
+
+
+第52章 网页宽高
+
+
+第53章 数据校验和格式化
+
+
+第54章 js基础
+获取对象类型  构造函数
+
+
+对象  属性  方法  事件
+文档document
+
+增加监听器
+baseURI  <base>  body  
+URL   标题 title   域名domain
+
+创建节点node   元素   属性  文本
+forms  images
+取元素  id  名字  标签名
+写入流
+——
+对象通用方法   tostring  valueof
+
+数组  连接合并   内部拷贝  填充  
+find  条件查找   findIndex
+foreach    map  some——
+是否数组  反转  截取新数组  添加删除修改
+是否存在值   值位置索引   连接为字符串
+转换为字符串tostring
+
+
+日期格式  date()
+
+第55章 vue和route用的全局函数
+ref
+emit
+
+route.push
+
+
+
+
+游戏数据如何维护，如何静态化
+数组
+道具使用
+
+
+如何根据数据渲染
+如何根据数据实现功能
+保存
+
+第56章 窗口和常见控件大小
+
+
+第57章 试各种功能模块
+
+
+第58章 多页面跳转
+访问url
+
+链接或者异步ajax
+
+请求必须带的信息，cookie session
+是否允许返回页面
+
+
+
+第59章 相对本文件，相对index
+.\  本目录
+
+\  实际上是根目录
+
+第60章 插件获取所有变量函数
+理解文档树层级和代码树层级
+
+undefied  var a未定义值
+null   空对象指针  类型为object
+非数字  浮点精度17
+isNaN()  isFinity
+Number.MAx_value
+非数转为数字  parseInt
+
+字符串长度.length   转换为字符串tostring(进制)
+
+
+
+所有的同级变量函数收缩
+
+自动传参
+
+
+作用域链
+
+匿名函数没有提升
+递归的时候最好和函数名解除耦合，arguments.callee
+函数[[scope]]属性
+函数的活动对象，变量对象
+循环给数组赋值一个闭包，return  i   没有执行就没有实际上赋值   建议用立即执行函数包裹   匿名的话每次都是不同的立即执行函数，其局部变量(如参数)都会传给内部闭包
+//闭包往往是全局的this
+
+
+
+属性  undefined   NaN  Infinity
+
+
+属性特性   可修改   可枚举? 可写 值?  defineProperty
+访问器属性   设置get  set函数修改读写行为
+定义多个属性，访问属性特性
+
+把数组用逗号分隔传入参数，apply(this,数组) 
+
+
+
+对象创造  工厂模式  输入参数，附加属性，返回对象
+构造模式，this.属性  new
+构造函数直接调用，this属性会加在window全局
+原型模式  把this换成prototype    属性来自于原型
+构造函数的prototype.constructor   实例对象的__proto__指向构造的原型
+构造的原型，原型的构造   
+原型isPrototypeOf(实例)
+getPrototypeOf
+//如果没有给对象属性赋值，就会读取原型属性
+//原型属性是共享的，修改一个会影响其他实例，可以重写成实例属性，值类型直接重写，引用的对象类型要整个更换
+
+hasOwnPropertyOf是否有实例属性
+是否存在属性   in
+for in也会迭代原型属性  .keys  .getpropertyName
+原型对象快捷定义法.prototype={属性名:值}
+//修改原型会影响所有实例
+
+
+
+Array  String都是在原型上定义的属性方法，用于初始化，后面继承的对象可以随便重写属性和方法
+//this和prototype混合使用
+//动态原型，如果添加了实例属性就不附加原型，否则添加原型
+//寄生构造  类似 工厂  但是new
+//稳妥构造  和工厂一样，但是传入的参数不作为属性，只在方法里引用，实现私有属性(实际上是返回了闭包)
+
+继承，将子类的原型指向父类的实例对象 A .prototype=new B
+不要重写整个原型，会影响后续整条原型链
+//缺点，会继承父类的实例属性,而且都会变成原型属性(共享化)
+方法似乎也有问题?
+//借用构造函数    子类内部call(this)父类   相当于super()   继承的父类实例属性只会是普通的this   call还可以传入参数
+
+组合继承  属性call 加上自己定义的this   方法 prototype=new   加上重写原型的方法(此时原型是个实例不用担心)， 修正constructor
+//原型式继承   直接字面量创建一个对象o
+创建一个空A   A.prototype=o
+其实相当于克隆，复制...不一定需要构造函数
+直接用Object.create()
+
+寄生继承，复制原型后，新对象添加属性并返回
+
+寄生组合    复制父类原型，给子类原型，修正constructor到父类
+
+
+Math方法  舍入  ceil  round floor  弃小数
+random  0到1  0到十   1到10   
+
+全局方法    
+编码   对查询字符串编码  
+对整个编码    替换非英文ascii字符
+
+
+基本类型自动转为包装引用类型(装箱)
+
+regx属性方法事件  静态属性
+
+new Date(Date.parse()) 也可直接输入格式，毫秒月日年
+newDate(Date.UTC())也可省略直接写
+年月日时分秒毫秒    toString   格式化为字符串  各种string
+
+枚举各种内置属性   属性特性不可枚举
+.call()调用
+对象属性名  遍历
+索引
+
+undefined和nu
+数组栈  队列  反转  排序  连接  删改换  查找索引   迭代传参
+
+必须返回true或false
+map  结果  every全true some有true  foeach运行  filter 仅返回true
+
+字符串索引访问字符    拼接  截断  子串位置(不为负1)  trim   大小写   模式匹配  匹配组索引 模式替换  比较  编码转字符串
+
+转换为整数
+js一切都是对象
+对象属性    函数对象属性 caller  arguments.callee
+length参数个数 prototype
+
+typeof  instanceof   Object.prototype
+包装对象装箱拆箱
+valueof  tostring   tofixed   toint
+
+返回方法名数组
+遍历返回一个类所有属性和方法  包括静态属性
+
+返回方法参数类型?返回类型
+返回方法的定义
+返回方法内定义的变量?
+返回当前的所有函数
+
+
+框架top.frames  parent
+打开窗口  open和a没区别  弹窗
+窗口相对于屏幕screenLeft screenTop
+窗口大小 innerHeight  OutterHeight
+body   documentElement.
+
+location   hash#号后url  服务器端口  域名 目录名  协议   href  查询字符串search
+
+修改url  window.location location.href location.assign()  会导致新纪录可以后退前进   replace(url)不会 reload重新加载
+浏览器对象
+插件检测   
+移动设备屏幕大小
+功能检测
+
+history.go(-1) go(url)  back  forward
+
+
+
+
+第61章 静态化是方便客户
+实际上就是把动态生成的网页存储为html返回给对方，如果对方再次请求就从本地拿给他
+
+第62章 缓存静态化反向代理读写
+
+
+第63章 nginx
+
+mysql配置
+
+
+
+http服务器   为什么要tomcat和nginx
+apache
+
+如何上线
+
+反向代理、负载均衡、缓存、URL重写以及读写分离
+
+代理与 vpn
+
+
+跨域方法   代理
+
+反向代理，用户访问url,从其他服务器拿东西
+返回给用户
+转发请求
+
+
+
+
+
+
+第64章 特性检测器
+跨浏览器测试工具
+
+
+modernzr
+
+2. polyfill/shim 向后兼容的浏览器的js补丁，一般和modernizr一起用
+3. jshint.js js语法检测器
+4. Boilerplate 开发的最佳实践的初始模板
+5. 阅读第三方库关于最低版本支持
+6. 使用js单元测试，测试目标浏览器
+7. Responsive Design （针对屏幕大小）
+8. normalize.css 统一浏览器基本元素的风格
+
+第65章 跨域
+cros    请求头orign头   允许头()access allow control  origin
+
+第66章 命名惯例收集
+
+
+第67章 监视点击阶段
+注销事件
+
+第68章 nodemon热重载
+
+
+第69章 req res常见属性方法
+url    body   data  cookies  host  param  route
+accept   mime
+
+第70章 设计模式
+是干嘛的   实例场景  使用到的技术
+
+第71章 新技术
+单元测试   qunit
+
+css moudle  
+markdown语法
+
+apidoc生成restful
+@api  请求方法  请求路径
+api名  api组
+参数    类型  大小
+  成功响应   返回码  返回数据
+失败响应
+最后由注释生成网页文档(文档无非是属性方法  参数 。返回值  事件这些)
+文档结构：参数  
+字段  类型  描述   响应体
+
+
+第72章 字体图标，css,精灵图
+
+
+第73章 css代码生成器
+cssgenerator
+css buttongenerator 按钮生成器
+ribbon builder丝带制作
+cssarrow  please对话框制作
+css load生成加载图标
+enjoy css
+colorzilla  gradient渐变
+cssmatic
+css type set  排版
+prefix   自动包含前缀
+
+精灵图合成
+
+
+
+智能生成工具应该有回溯操作的功能，有跳转的功能，有修改部分操作的功能
+
+用vue做  带预览   可以动态渲染
+
+模仿bootstap可视化工具?拖动布局?
+
+
+父   子  子兄弟v-for    
+子元素生成    v-if?
+
+
+
+动态生成dom?
+
+改变元素块状   
+列表生成
+
+第74章 bootstrap可视化
+
+
+第75章 自动转rem工具
+rem   随着根元素的fontsize变化而变化
+要判断设备尺寸
+
+改变宽度和文字大小
+
+
+智能生成工具
+
+第76章 翻译插件
+
+
+第77章 工具软件
+截屏
+gif录制
+
+鼠标操作提示快捷键 key promoter
+
+第78章 本机ip  本地ip跨端调试
+本地网站分配ip端口
+
+192.168.1.1是局域网
+
+127.0.0.1是本地  localhost
+
+手机本地是10开头也是localhost
+
+域名解析  穿透  端口映射  nat123   花生壳
+
+端口映射
+手机网外网内网
+
+真实动态公网ip  可以路由映射
+
+
+修改vue项目  host改为局域网ip  ipconfig
+
+vue项目index.js  0000   package.json  script 
+-- host 0.0.0.0  就可以同时映射到内网和本地
+关闭防火墙
+
+
+这样在外网访问会导致invalid host header
+解决方法是在webpackdev server   build下
+baseconfig.js配置  禁止检查
+
+直接 host  --disableHostcheck
+
+第79章 url用相对地址避免上线
+./是当前目录  可以省略?
+
+/是绝对地址 表示根目录，网站根目录
+
+第80章 内网穿透到外网
+用软件直接穿透   然后映射二级域名
+
+将123  或者192映射给外网ip
+
+第81章 常见配色 尺寸 悬浮效果
+
+
+第82章 todo桌面便签
+
+
+第83章 截图录gif 剪贴板云
+
+
+第84章 节点理解
+document  创建节点  获取元素
+
+节点类型   属性 值  父子节点
+方法   增加子节点
+
+
+第85章 常用css和js库
+网格库
+
+兼容库
+
+模板
+
+第86章 git命令
+
+
+第87章 代码压缩 混淆
+算法工具   打字统计工具
+
+
+
+js和html变乱七八糟字符串   用eval动态执行
+
+html  document.write动态执行()
+
+
+hbuild    不过浏览器最后还是会解析吧?   
+
+ast工具
+
+uglify
+
+正则
+
+语法树    把js代码转成中间代码，再动态还原加载
+
+语法树   遍历
+
+把网页混合开发避免浏览器调试
+
+第88章 用快捷键和手势
+
+
+第90章 各种异步
+异步原理  事件循环
+
+异步场景 文件io    定时器  触发事件  网络访问回调  回调函数
+
+requestAnimationFrame
+
+thunk函数
+
+预加载  懒加载  异步模式
+
+回调顺序混乱  可读性差
+
+回调地域，下一个回调使用的依赖上一个回调请求的结果
+
+
+promise  对象是对回调的封装
+链式调用解决可读性  then中执行成功回调，以及返回新promise   关于fetch
+
+resolve() 修改状态为成功  reject
+这是为了逻辑判断
+传递数据resolve(数据)，then((数据)｛｝)
+
+
+var fetch = function (url) {
+    return new Promise(function (resolve,reject) {
+        ajax(url,resolve,reject);
+    });
+}
+fetch()  其实就是根据参数生成相应的promise对象
+
+
+生成器   co协程   迭代器对象
+
+await
+
+Reactive Programming
+
+async函数    let a=await  语句   该语句一般是个promise对象，或者其他等待值
+异步执行完才会执行下一行代码
+
+第90章 pomelo服务器框架
+q
+
+第91章 前端面试题
+jsonp   服务器返回js     js中有函数
+远程传参调用本地定义的函数
+
+函数中包裹json     本地定义函数处理 json
+js文件中传参调用本地函数
+
+
+服务端可以根据请求动态生成函数，这样只需要更改请求
+json当然也可以动态生成
+
+
+
+
+
+第92章 js高程闭包原型继承
+作用域链
+
+原型链   构造函数   构造原型   prototype.constructor
+原型属性   方法   由对象继承
+实例属性方法，this或者后期添加，同名会覆盖原型属性
+实例原型__proto__等于构造的原型
+
+
+对象属性特性，定义属性，读取属性
+是否存在属性'   实例  原型  遍历属性
+
+创建对象
+工厂  new object  或者空{}
+构造 this
+原型  构造函数的原型中定义属性
+构造加原型 this和prototype
+动态原型  如果有实例属性 就不添加原型属性
+寄生构造
+稳妥构造
+
+继承 原型链   用__proto__遍历
+objcet.prototype   null
+
+修正constructor
+
+原型继承  构造原型指向父类实例对象
+借用构造继承super()
+组合继承
+克隆拷贝继承
+寄生继承
+寄生组合
+
+
+闭包       返回对象或者   返回函数
+立即执行函数传参
+
+
+闭包立即执行可以节省代码，实现封装，保存变量
+
+实现封装和保持局部变量可以看作private
+封装的变量可以是局部变量或者参数，不会销毁
+
+var a   ;    return    
+{getA(){return a}   setA(n){a}    }
+
+
+字符串和数组方法
+
+call apply调用的参数形式
+
+
+深克隆，条件判断属性是否对象递归
+
+
+
+
+
+
+
+第93章 先调用函数再实现
+
+
+第94章 es6总结
+let const  对象可变地址不变
+解构为变量   遍历器  默认值   数组元素  对象属性   属性名:变量名
+字符串    数和不二
+
+参数解构   f([a,b]){}
+交换变量    函数返回数组解构
+提取json属性   参数默认值    
+遍历map   解构 for([  key ,value] of)
+加载模块
+
+
+字符串
+索引找字
+编码转串   for of遍历   for 遍历  索引
+是否存在字符  indexof  includes  startsWith
+endsWith   重复  补全
+模板字符串    变量   标签模板
+
+
+二进制八进   0o  0b 0x
+是否有限  是否非数字 是否整数
+字符串解析为整数   解析为浮点
+数最大值  最小值
+最小误差
+安全整数   是否安全整数
+
+
+参数默认值   函数length失去效果
+rest参数   ...数组变量名   代替arguments   
+意思是传入的任意个参数组成的数组
+name
+
+箭头函数    f=v=>a    this作用域在定义处
+函数绑定
+尾调用
+尾递归
+尾逗号
+
+
+数组扩展运算符
+代替apply  将数组转成多个参数
+克隆   合并数组
+与解构结合   把剩余值作为数组保存
+字 串转数组  对象转数组  map  set
+
+对象转数组
+
+
+对象   属性简写   
+方法简写
+属性的getter  setter  set  属性()
+
+属性名用.   或者[]   可以拼接属性名  方便遍历   []内可以是变量   或者表达式
+方法name    get.name   set.name
+
+对象是否相等object.is
+合并对象object.assign
+浅拷贝    替换同名属性   数组合并会覆盖同索引         添加属性    方法
+
+可枚举    获取属性描述对象
+.keys   for in   json. stringify   assign
+
+原型不可枚举  length   tostring
+getownproperty
+返回所有属性  包括不可枚举    反射
+返回symbol键名属性
+
+对象的原型__proto__
+建议用setprototypeof  get   create
+
+super指向原型对象
+
+object.keys   .values  .entries
+ 
+
+symbol  想给对象新属性  方法  名字冲突
+可以认为是独一无二的字符串
+s=symbol("name")
+不能做拼接  可转换
+[s]:100   必须用中括号
+无法被遍历的属性   有个专门的遍历方法或者反射ownkeys
+
+内置的symbol
+
+
+
+set   map   new set  可以传入数组
+扩展展开    .size  for of   add delete   has clear  去重数组  .keys
+
+foreach  键名  键值
+
+weakset内部只是对象    在里面也会被回收，不可遍历
+可以接受对象数组为参数    普通数组成员非对象不行
+add delete  has.
+
+弱引用可以不必多余清除对象
+
+
+map键值对  键可以是非字符串
+.set key value   .get key   has  delete  size
+
+构造时传入成对  的数组
+
+键  对象键是地址不同的   简单类型的键是相同的
+遍历
+
+转数组    扩展运算   转对象   对象转map  转json   json转map   转换过程中  键会变字符串
+
+weakmap   对象为键名
+
+
+
+代理   new Proxy(target,options)
+读属性
+写属性
+in   属性存在   has   删除属性
+遍历自身属性不包括原型   定义属性
+阻止继承    获取对象原型    是否可继承
+设置原型      调用apply call    构造调用
+
+用来写客户端或者orm
+
+反射  静态
+
+
+
+
+
+
+第95章 敏捷开发先定义后实现
+
+
+第96章 面试吹牛
+
+
+第97章 webpack入门
+
+
+第98章 mpvue weui  easymock
+
+
+第99章 阿里矢量库iconfont
+
+
+第100章 交互编程教学网站，指法
+总结代码单词
+
+让人照着屏幕输入   
+通关式
+
+课程设计
+字面量法
+
+
+
+
+
+第101章 正则
+爬虫解析html    字符串处理
+ 还是直接正则匹配
+匹配特定字符
+
+
+g全局 匹配所有匹配项批量替换
+全局匹配有个index找不到会设为0
+
+不用g只能匹配一项     match  test   exec
+replace
+
+ i不分大小写  m多行
+正则对象和string对象   控件pattern
+//i
+str.search(pattern) replace(pattern,"")
+match返回数组
+
+正则对象   =//i   没引号   .test(string  返回true
+.exec   返回匹配数组   这个数组有index属性input   
+但是它是匹配多个子表达式而只能匹配一项
+
+感觉很麻烦
+exec换字符使用要lastindex归零
+
+
+搜索   替换(过滤)
+
+一位或两位    0或1     字符重复和串重复
+字符和数字    筛选
+
+多个匹配结果
+sql
+字符串
+替位符   
+
+任意字符  .   一个字符     多个.... 
+转义   .  \[]
+匹配空白符   空格[ ]   换行回车rt windows   制表   可以用来删除行或空格
+任何空白v   非空白V
+
+匹配多个中的一个[]
+0-9   a-z A-Z
+取非   不需要的字符，其他的都可以^[]
+数字   非数字  d  D   字母数字下划线w  W
+w  d也可混入到[]中来扩大范围，或者缩小范围，[]中混合标点字母
+
+用十六  八进制匹配  x   o
+
+重复匹配    \w+  一个或多个
+同字符重复  a+      多个任意字符 w  d 或[]
+*零个或多个    ?  01
+限制固定重复次数{}    重复范围 {2，4}
+至少重复次数
+
+懒惰匹配
+
+
+或者匹配   |
+
+
+匹配位置   限于单词   b   匹配的是空格  词开头   结尾          只匹配词本身
+字符串开头结尾
+
+子表达式     重复只能实现单字符重复
+整个匹配的重复    避免重复写同样的代码
+()
+
+
+回溯引用   引用之前的匹配    
+找出重复字符
+
+前后查找
+
+
+
+
+
+第102章 py爬虫存库   数据分析
+正则爬虫
+
+
+计算机其实就是存储/IO/CPU三大件； 而计算说穿了就是两个东西：数据与算法（状态与转移函数）。常见的软件应用，除了各种模拟仿真、模型训练、视频游戏这些属于计算密集型应用外，绝大多数都属于数据密集型应用。从最抽象的意义上讲，这些应用干的事儿就是把数据拿进来，存进数据库，需要的时候再拿出来。
+
+
+抽象是应对复杂度的最强武器。操作系统提供了对存储的基本抽象：内存寻址空间与磁盘逻辑块号。
+
+文件系统在此基础上提供了文件名到地址空间的KV存储抽象。而数据库则在其基础上提供了对应用通用存储需求的高级抽象。
+互联网应用大多属于数据密集型应用，对于真实世界的数据密集型应用而言，除非你准备从基础组件的轮子造起，不然根本没那么多机会去摆弄花哨的数据结构和算法。甚至写代码的本事可能也没那么重要：可能只会有那么一两个Ad Hoc算法需要在应用层实现，大部分需求都有现成的轮子可以使用，主要的创造性工作往往在数据模型与数据流设计上。实际生产中，数据表就是数据结构，索引与查询就是算法。而应用代码往往扮演的是胶水的角色，处理IO与业务逻辑，其他大部分工作都是在数据系统之间搬运数据。
+
+
+
+python科学计算
+
+static文件夹
+
+
+转
+GitHub上Python的爬虫工具
+2018年01月28日 21:16:10 三名狂客 阅读数：1190
+网络相关
+通用
+urllib - 网络库(标准库)
+requests - 网络库
+grab - 网络库(基于pycurl)
+pycurl - 网络库 (与libcurl绑定)
+urllib3 - 具有线程安全连接池、文件psot支持、高可用的Python HTTP库
+httplib2 - 网络库
+RoboBrowser - 一个无需独立浏览器即可访问网页的简单、pythonic的库
+MechanicalSoup - 能完成自动网站交互的Python库
+mechanize - 有状态、可编程的网页浏览库。
+socket - 底层网络接口(标准库)
+Unirest for Python - 一套支持多种语言的轻量级HTTP库
+hyper - Python HTTP/2客户端
+PySocks - SocksiPy持续更新并维护的版本，指出bug修复和一些其他功能，可以作为socket模块的替代品
+异步
+treq - 基于twisted、与requests类似的API
+aiohttp - asyncio的HTTP客户端/服务器 (PEP-3156)
+网络爬虫框架
+全能型爬虫
+grab - 网络爬虫框架(基于pycurl/multicurl)
+scrapy - 网络爬虫框架(基于twisted)
+pyspider - 一个强力的爬虫系统
+cola - 一个分布式爬虫框架
+其他
+portia - 基于Scrapy的可视化爬虫
+restkit - Python的HTTP资源库。允许影虎简单的访问HTTP资源并用来创建项目
+demiurge - 基于PyQuery的微型爬虫框架
+HTML/XML解析
+通用
+lxml - 高效的HTML/XML处理库。支持XPATH，用C语言写成
+cssselect - 解析DOM树和css选择器
+pyquery - 解析DOM树和jQuery选择器
+BeautifulSoup - Python写成的低效HTML/XMl处理库
+html5lib - 根据WHATWG规范生成HTML/ XML文档的DOM。WHATWG规范是现在浏览器的通行规范
+feedparser - 解析RSS/ATOM信息流
+MarkupSafe - Python的XML/HTML/XHTML安全转义字符串工具
+xmltodict - 让你处理XML如同处理JSON一样
+xhtml2pdf - HTML/CSS to PDF转化器
+untangle - 讲XML文档转化为Python项目以简化处理难度
+hodor - 支持lxml and cssselect的配置驱动包装工具
+清理
+Bleach - 清理HTML (需求html5lib)
+sanitize - 将混乱的数据世界恢复清楚
+文本处理
+解析及操作文本的库
+通用
+difflib - 差异化计算工具(Python标准库)
+Levenshtein - 快速计算编辑距离及字符串相似度
+fuzzywuzzy - 模糊字符串比匹配
+esmre - 正则表达式加速器.
+ftfy - 将Unicode文本自动整理减少碎片化
+转换
+unidecode - Unicode转化为ASCII文本
+字符编码
+uniout - 将转移字符串输出为可读形式
+chardet - Python 2/3兼容字符编码检测器
+xpinyin - 讲汉字转为拼音的库
+pangu.py - CJK及字母数字文本间距格式化
+Slug化
+awesome-slugify - 可保留Unicode的Python slugify库
+python-slugify - 讲Unicode转为ASCII的Python slugify库
+unicode-slugify - unicode slugs生成工具
+pytils - 处理俄语字符串的小工具(包含pytils.translit.slugify)
+通用解析器
+PLY - Python lex和yacc解析工具
+pyparsing - 用于生成解析器的通用框架
+人名
+python-nameparser - 姓名解析组件
+电话号码
+phonenumbers - 处理、格式化、存储、验证全球电话号码
+用户代理字符串
+python-user-agents - 浏览器用户代理解析器
+HTTP Agent Parser - Python HTTP代理解析器
+fake-useragent - 基于全球浏览器统计的Python用户代理欺骗器
+user_agent - 用户代理数据生成器
+特殊格式处理
+处理特编辑特殊字符格式的库
+通用
+tablib - 处理XLS, CSV, JSON, YAML等表格数据的库
+textract - 从任何文档中提取文本，支持Word, PowerPoint, PDF等
+messytables - 杂乱的表格数据解析
+rows - 支持多种格式的通用且美观的表格数据处理器(现有CSV, HTML, XLS, TXT -- 即将支持更多)
+Office
+python-docx - 阅读，查询和修改Microsoft Word 2007/2008 docx文件
+xlwt / xlrd - 从Excel读取及写入数据和格式化信息
+XlsxWriter - 用于穿件Excel .xlsx文件的Python模块
+xlwings - 一个BSD许可的库，是Excel与Python互相调用更加简单
+openpyxl - 可读取、编辑Excel 2010xlsx/xlsm/xltx/xltm文件的库
+Marmir - 提取Python数据结构并将其转化为表格的库
+PDF
+PDFMiner - 从PDF文档中提取信息的工具
+PyPDF2 - 一个分割、合并、转换PDF文件的库
+ReportLab - 可以快速创建大量PDF文档
+pdftables - 从PDF文件中精准提取表格
+Markdown
+Python-Markdown - 一个用Python实现的John Gruber的Markdown
+Mistune - 速度最快，功能全面的Markdown纯Python解析器
+markdown2 - 一个完全用Python实现的快速的Markdown
+YAML
+PyYAML - 一个Python的YAML解析器
+CSS
+cssutils - 一个Python的CSS库
+ATOM/RSS
+feedparser - 通用的feed解析器
+SQL
+sqlparse - 一个无验证的SQL语句分析器
+HTTP
+http-parser - C语言实现的HTTP请求/响应消息解析器
+Microformats
+opengraph - 一个用来解析Open Graph协议标签的Python模块
+可移植的执行体
+pefile - 一个多平台的用于解析和处理可移植执行体（即PE）文件的模块
+PSD
+psd-tools - 将Adobe Photoshop PSD（即PE）文件读取到Python数据结构
+自然语言处理
+自然语言处理库
+NLTK - Python自然语言处理领先者
+Pattern - Python的网络挖掘模块。他有自然语言处理工具，机器学习以及其它
+TextBlob - 为深入处理自然语言的项目提供API，参考了NLTK及其他
+jieba - 中文分词
+SnowNLP - 汉字文本处理库
+loso - 中文分词库
+genius -基于条件随机域的中文分词
+langid.py - 独立的语言识别系统
+Korean - 韩文形态库
+pymorphy2 - 俄语形态分析器（词性标注+词形变化引擎）
+PyPLN - 用Python编写的分布式自然语言处理通道。这个项目的目标是创建一种简单的方法使用NLTK通过网络接口处理大语言库
+langdetect - Python的谷歌语言检测库端口
+浏览器自动化与仿真
+浏览器
+selenium - 自动化真实浏览器(Chrome, Firefox, Opera, IE)
+Ghost.py - QtWebKit封装(需求PyQT)
+Spynner - 具备AJAX支持的程序化网页浏览模块
+Splinter - 通用API浏览器模拟器（selenium web驱动，Django客户端，Zope）
+Headless工具
+xvfbwrapper - 用于在X虚拟帧缓冲区（Xvfb）中运行显示的Python包装器
+多进程并发
+threading - Python标准库的多线程运行。因为python GIL限制，对于I/O密集型任务很有效，对于CPU绑定的任务没用
+multiprocessing - 多进程标准库
+celery - 基于分布式消息传递的异步任务队列/作业队列
+concurrent-futures - concurrent.futures模块提供用于异步执行callable的高级接口
+异步
+异步网络编程库
+asyncio - 异步I/O，时间循环，协同程序和任务(Python 3.4以上版本的Python标准库)
+Twisted - 基于事件驱动的网络引擎框架
+Tornado - 一个Web框架及异步网络库
+pulsar - Python事件驱动的并发框架
+diesel - Python的基于Greenlet的I/O框架
+gevent - 一个基于协同程序的Python网络库，使用greenlet
+eventlet - 有WSGI支持的异步框架
+Tomorrow - 异步代码的魔法
+队列
+celery - 基于分布式消息传递的异步任务队列/作业队列
+huey - 小型多线程任务队列
+mrq - Mr. Queue - 使用redis & Gevent 的Python分布式工作任务队列
+RQ - 基于Redis的轻量级任务队列管理器
+simpleq - 一个简单的，可无限扩展，基于Amazon SQS的队列
+python-gearman - Gearman的Python API
+云计算
+picloud - 在云端执行Python
+dominoup.com - 在云端执行R, Python及matlab代码
+电子邮件
+电子邮件处理库
+flanker - 电子邮件及MIME处理库
+Talon - Mailgun库用于提取消息的报价和签名
+URL和网络地址操作
+URL和网络地址操作库
+URL
+furl - 一个小的Python库，使得操纵URL简单化
+purl - 一个简单的不可改变的URL以及一个干净的用于调试和操作的API
+urllib.parse - 用于打破统一资源定位器（URL）的字符串在组件（寻址方案，网络位置，路径等）之间的隔断，为了结合组件到一个URL字符串，并将“相对URL”转化为一个绝对URL，称之为“基本URL”（标准库）
+tldextract - 使用公共后缀列表从URL的注册域和子域中准确分离TLD
+网络地址
+netaddr - 用于显示和操纵网络地址的Python库
+网页内容提取
+网页内容提取库
+HTML页面的文本和元数据
+newspaper - 用Python进行新闻提取、文章提取和内容策展
+html2text - 将HTML转为Markdown格式文本
+python-goose - HTML内容/文章提取器
+lassie - 人性化的网页内容检索工具
+micawber - 一个从网址中提取丰富内容的小型库
+sumy -一个自动汇总文本文件和HTML网页的模块
+Haul - 一个可扩展的图像爬虫
+python-readability - arc90 readability工具的快速Python接口
+scrapely - 从HTML网页中提取结构化数据的库。给出了一些Web页面和数据提取的示例，scrapely为所有类似的网页构建一个分析器
+libextract - 从网站提取数据
+视频
+youtube-dl - 一个从YouTube下载视频的小型命令行工具
+you-get - Python3写成的YouTube/Youku/Niconico视频下载工具
+Wiki
+WikiTeam - 下载并保存wkiks的工具
+WebSocket
+用于WebSocket的库
+Crossbar - 开源的应用消息传递路由器（Python实现的用于Autobahn的WebSocket和WAMP）
+AutobahnPython - 提供了WebSocket协议和WAMP协议的Python实现并且开源
+WebSocket-for-Python - Python 2和3以及PyPy的WebSocket客户端和服务器库
+DNS解析
+dnsyo - 在全球超过1500个的DNS服务器上检查你的DNS
+pycares - ic-ares的接口。c-ares是进行DNS请求和异步名称决议的C语言库
+计算机视觉
+OpenCV - 开源计算机视觉库
+SimpleCV - 用于照相机、图像处理、特征提取、格式转换的简介，可读性强的接口（基于OpenCV）
+mahotas - 快速计算机图像处理算法（完全使用 C++ 实现），完全基于 numpy 的数组作为它的数据类型
+代理服务器
+shadowsocks - 一个快速隧道代理，可帮你穿透防火墙（支持TCP和UDP，TFO，多用户和平滑重启，目的IP黑名单）
+tproxy - tproxy是一个简单的TCP路由代理（第7层），基于Gevent，用Python进行配置
+杂项
+user_agent - 此模块用于生成随机，有效的Web导航器的配置和用户代理HTTP header
+
+第103章 小程序
+webview
+
+/page/index/index  url与参数
+查询字符串
+wx.setStorage
+
+
+界面组件
+view  弹性框  scroll滚动区  滚动条  到顶按钮
+轮播   点   垂直水瓶  自动播放  间隔
+text添加移除  图标icon  大小
+遮罩  半透明
+吐司  带上图标    延迟
+进度条
+表单   按钮    复选  单选    输入  标签  选择器
+滑块   开关toggle
+
+模态对话框   确定取消
+
+导航   navigator   相当于a  当前页  跳转
+
+
+
+接口
+登录    用户信息头像昵称    微信支付  
+设置界面  标题  标题栏 加载动画 
+跳转   下拉刷新      动画   旋转缩放移动倾斜
+绘画
+
+获取网络状态    系统信息   重力感应
+
+发起请求   套接字   上传下载
+
+图片  录音   背景音乐  文件   保存删除
+读写数据  k v    
+
+
+下方菜单
+
+
+接口
+
+
+
+
+数据绑定
+模板{{}}   bindtap=""
+wx  for   wx  if
+page   实例     data     方法
+setData
+模板定义<template  name>
+模板复用  is
+
+
+页面是一个个文件夹，在页面中的js中注册页面
+Page({
+  data: {text: "This is page data."},//页面数据，用来维护视图，json格式
+  onLoad: function(options) {  },//监听加载
+  onReady: function() {  },//监听初次渲染完成
+  onShow: function() {  },//监听显示
+  onHide: function() {  },//监听隐藏
+  onUnload: function() {  },//监听卸载
+  onPullDownRefresh: function() {  },//监听下拉
+  onReachBottom: function() {  },//监听上拉触底
+  onShareAppMessage: function () {  },//监听右上角分享
+  //如下为自定义的事件处理函数（视图中绑定的）
+  viewTap: function() {//setData设置data值，同时将更新视图
+    this.setData({text: 'Set some data for updating view.'})
+  }
+})
+
+第104章 封装函数大全，js库
+是否数字   是否对象   是否数组
+过滤输入
+对象名
+
+第105章 vps虚拟主机
+mysql    testdb库tsetdb
+172.96.217.171      phpmyadmin
+
+26379
+
+端口默认3306
+
+php
+
+域名放前端    ip访问后端
+ftp  root     
+密码hhtv3
+
+
+linux下    mysql表名分大小写  千万注意
+
+第106章 showdown.js
+替换innerHTML
+
+
+
+第107章 thinkphp  workerman
+在线人数
+历史对话
+
+
+模型类   控制器中引用的别名
+save  create  saveall   get
+实例模型的save和
+先查找后的save    查找后处理数据
+
+读取器
+
+
+
+gatewayworker
+
+
+
+pathinfo  
+
+设置开启端口
+
+
+服务端用内网地址或者本地地址
+
+查看端口
+
+
+workman可关闭  php  stop
+
+
+php全局变量是干嘛的
+
+聊天给客户端分配uid
+遍历客户端
+
+
+
+单进程worker   多进程  pannel   socket.io
+
+第108章 js工具库函数
+  格子布局   流式布局     网格布局
+
+后台管理系统  博客站点   框架
+
+分层网页
+
+
+
+一键调整尺寸
+
+样式库   效果库  功能库   布局库   ui库  
+预制资源        样式库
+
+通用css 和html组件
+
+
+
+chat   d3   rx  touch.js
+
+
+Underscore 和 Lodash（dah）
+Lodash - https://github.com/lodash/lodash
+
+可能大多数人都知道这两个库。Underscore 的目的是为 JavaScript 中的常见任务提供实用的函数。Lodash 是下载量最大和被依赖最多的库之一，旨在为数组、字符串、object 和 argument 对象提供更一致的跨环境迭代支持，并已成为 Underscore 的超集。这两个库由相同的核心贡献者维护，在技术选型时完全可以考虑使用它们。
+Ramda
+Ramda - https://github.com/ramda/ramda
+在 GitHub 上的 Star 已经超过 12,000，这个库专为函数式编程而设计，可以轻松创建不改变用户数据状态的函数式管道。Ramda 的核心设计理念是创建具有不变性和无副作用的函数。所有的函数会被自动柯里化，并根据易用性安排参数的顺序。
+MathJS
+https://github.com/josdejong/mathjs
+在 GitHub 上的 Star 已经超过 6000，这个库是 JavaScript 和 Node.js 的数学扩展库，与 JavaScript 内置的 Math 库兼容。该库包含一个灵活的表达式解析器，能够运行符号计算，并提供了一系列内置函数和常量。用户还可以对其进行扩展。
+Moment
+https://github.com/moment/moment
+在 GitHub 上的 Star 已经超过 37,000，是一个 JavaScript 日期和时间操作库，用于解析、验证、操作和格式化日期。Moment 可以在浏览器和 Node.js 中运行。从 2.10.0 版本开始迁移到 ECMAScript 6。
+另外两个同类的库：
+Date-fns（10,000 个 Star）- https://github.com/date-fns/date-fns
+DateJS - https://github.com/datejs/Datejs
+Sugar
+https://github.com/andrewplummer/Sugar
+在 GitHub 上的 Star 已经超过 3500，主要用于处理本地对象。这个库支持自定义构建，还提供了模块化的 npm 包，因此可以只使用其中必要的部分模块（也可以与 Bit 结合使用），用户还可以通过自定义方法或使用插件来应对特定的使用场景。
+Lazy
+https://github.com/dtao/lazy.js
+在 GitHub 上的 Star 将近 5000，是一个功能强大的 JavaScript 库，它的 lazy 引擎“尽可能地少做一些工作”，同时保持足够的灵活性。
+CollectJS
+https://github.com/ecrmnn/collect.js
+在 GitHub 上的 Star 超过 3200，主要用于处理 JavaScript 中的数组和对象，无需其他依赖，提供了几十个有用的功能和 API，这些 API 几乎与 Laravel Collections 5.5 相同。该库的维护状态很活跃，值得关注。
+ChanceJS
+https://github.com/chancejs/chancejs
+Chance 在 GitHub 上的 Star 超过 3200，一个简单的随机对象生成器，用于生成随机的字符串、数字等。在编写自动化测试代码或任何需要随机对象的地方，可以用它来减少单调的工作。
+ChartJS
+https://github.com/chartjs/Chart.js
+在 GitHub 上的 Star 将近 40,000 个，提供了 8 种不同类型的数据可视化，每种类型都支持动画和定制。借助 Chart.js，我们可以使用<canvas>标签创建简单的HTML5图表，而且在所有现代浏览器中都具有出色的渲染性能。
+Polished
+https://github.com/styled-components/polished
+在 GitHub 上的 Star 超过 3500 个，由 styled-components 团队开发，是一个非常优秀的轻量级工具集，支持使用 JavaScript 编写具有 SASS 风格辅助函数和 mixin 的样式。该库与 styled-components、Aphrodite、Radium 或简单的内联样式兼容。
+Mout
+https://github.com/mout/mout
+Mout.js 是一组模块化的 JavaScript 库，可以在浏览器或 node.js 中运行，提供类似于其他语言标准库（Python、Ruby、PHP 等）中的辅助方法。mout.js 允许仅加载必需的模块或函数，并提供了一致的 API，规范了跨浏览器行为。
+THE END
+
+
+
+30 seconds of code
+
+这并不是一个 JavaScript 库，而是一个非常实用的 JavaScript 代码片段集合，全部采用 ES6 编写，而且实用最简单的方法实现，尽量确保你可以在30秒或更短的时间内理解这些代码，并使用。
+
+30 seconds of code ：https://github.com/30-seconds/30-seconds-of-code
+
+30 seconds of code 中文翻译：http://www.css88.com/30-seconds-of-code/
+
+mojs
+
+
+
+mojs是一个用于创建任何复杂的动态图形和 Web 动画库，简单而且动画非常流畅。 它提供了声明性语法。 它由简单的声明性API构建，因此它也与跨设备浏览器兼容。
+
+mojs ：https://github.com/legomushroom/mojs
+
+Voca
+
+用于字符串操作的JavaScript库。 它包括有用的函数，如change case， trim， pad，slugify，latinise，sprintf’y，truncate，escape等。 您可以在构建时加载单个函数来最小化应用程序。 该库具有高测试覆盖率，没有其他依赖。
+
+voca ：https://github.com/panzerdp/voca
+
+Licia
+
+这是一个有趣的项目，只有400多个stars，基本上是一个简单却又很有用 JavaScript 代码片段集合，具有高级文档和测试覆盖率。 v2.0 在 master 上发布了预览版本，并且维护和开发都很积极。
+
+你可以在 Hackernoon的文章 中了解更多信息。
+
+
+
+Particles.js — 一个用来在 web 中创建炫酷的浮动粒子的库
+
+Three.js — 一个用来在 web 中创建 3d 物体和 3d 空间的库
+
+Fullpage.js— 快速实现全屏滚动特性
+
+Typed.js — 打字机效果
+
+Waypoints.js — 滚动到某个元素位置时触发一个功能
+
+Highlight.js — web 语法高亮
+
+Chart.js — 使用 JavaScript 创建漂亮的图表
+
+Instantclick — 能够明显加速网站加载时间，鼠标 hover 时预加载资源
+
+Chartist — 另一个图表库
+
+Motio — 一个基于动画和平移的雪碧图库
+
+Animsition — CSS 实现动画过渡的 jQuery 插件
+
+Barba.js — 流式页面过渡
+
+TwentyTwenty — 一个对比图片的可视化 diff 工具
+
+Vivus.js — 在 SVG 上绘制动画
+
+Wow.js — 滚动时展现动画
+
+Scrolline.js — 页面滚动时显示滚动进度
+
+Velocity.js — 快速流畅的 JavaScript 动画
+
+Animate on scroll — 漂亮的页面滚动元素动画
+
+Handlebars.js — Javascript 模板
+
+jInvertScroll — 视差滚动
+
+One page scroll — 又一个页面滚动库
+
+Parallax.js — 对智能设备方向变化做出响应的视差引擎
+
+Typeahead.js — 搜索补全
+
+Dragdealer.js — 炫酷拖拽
+
+Bounce.js — 创建炫酷的 CSS3 动画
+
+Pagepiling.js — 全屏滚动
+
+Multiscroll.js — 两列垂直反向滚动
+
+Favico.js — 动态 favicon
+
+Midnight.js — 固定头部切换效果
+
+Anime.js — 动画库
+
+Keycode — 获取键盘按键的 JavaScript keycode
+
+Sortable — 拖拽插件
+
+Flexdatalist — 自动补全
+
+Slideout.js — 移动应用侧滑导航
+
+Jquerymy — 使用 jQuery 实现双向数据绑定
+
+Cleave.js — 实时格式化输入内容
+
+Page — 客户端单页应用路由
+
+Selectize.js — 用来添加 tag 的 Hybrid 选择框
+
+Nice select — 创建漂亮的选择框的 jQuery 库
+
+Tether — 使用固定定位来创建相关元素
+
+Shepherd.js — 为应用创建新手引导
+
+Tooltip — tooltip 提示框
+
+Select2 — Jquery 选择框插件
+
+IziToast — 通知弹窗实现
+
+IziModal — 模态框实现
+
+CSS 库 / 设计相关
+
+Animate.css — 动画库
+
+Flat UI Colors — 扁平化设计配色
+
+Material design lite— 基于 Google material design 的框架
+
+Colorrrs — 随机颜色生成器
+
+Section separators — CSS 实现区域分割
+
+Topcoat — 框架
+
+Create ken burns effect — 使用 CSS3 动画实现 Ken burns 特效
+
+DynCSS — 给 CSS 添加 function，动态化 CSS
+
+Magic animations — CSS3 实现动画特效
+
+CSSpin — css spinners 合集
+
+Feather icons — Icon 集合
+
+Ion icons — Icon 集合
+
+Font awesome — Icon 集合
+
+Font generator — 组合多个字体创建混合字体
+
+On/Off switch — 使用 CSS 创建 on/off 开关、radio 按钮
+
+UI Kit — 框架
+
+Bootstrap — 框架
+
+Foundation — 框架
+
+有用的产品/链接
+
+cheatsheet — 可以写在<head>中的所有标签
+
+Ghost — 基于 Node.js 的博客平台
+
+What runs — 一个用于网站技术分析的 Chrome 插件
+
+Learn anything — 一个强大的用于分析某个主题的思维导图
+
+
+
+
+
+
+
+
+1. Kite
+
+
+
+Kite是一个灵活的布局助手CSS库。Kite使用`inline-block`而不是最新的CSS语法。它注重实际，易于理解且容易使用。Kite用法与flexbox相似：justify-content,等等。你可以很轻松地创建复杂的模块。Kite是基于OOCSS 与 MindBEMding，它可以帮助您快速构建自己的组件。Kite支持几乎所有浏览器，它属于MIT许可。
+
+2. DynCSS
+
+
+
+DynCSS 将您的CSS解析成-dyn-(attribute)规则。这些规则是模拟浏览器事件(如滚动和缩放)的javascript表达式。其结果会应用到上面指出的CSS属性。你可以将任何CSS属性设置为动态--前提是它对于jQuery的css()方法是可写的。你可以通过附加-dyn-前缀并指定一个引用的javascript表达式来实现。
+
+3. Progressjs
+
+
+
+ProgressJs 是一个 JavaScript 和CSS3库，可以帮助开发者创建和管理页面上所有元素的进度。你可以设计自己的进度条模板并且可以轻松自定义它。你也可以用ProgressJs 来为用户显示内容加载（图片，视频等）的进度。它可以用在textbox，textarea 甚至整个body上。
+
+4. Hover.CSS
+
+
+
+Hover.CSS 是一个有用的CSS3悬停效果集合，可用于动作调用，按钮，商标，特性图片等。 自定或直接应用到你自己的元素上都非常的简单。 hover.css可以用多种方式来使用; 可以复制粘贴你喜欢的效果到你自己的样式表里，也可以引用样式表。然后只需向你想要的元素需添加对应效果的class名称即可。如果你只打算使用一个或几个效果，最佳实践是复制粘贴一个效果。
+
+5. Spinkit
+
+
+
+Spin kit是一个酷炫的加载动画CSS集合。 Spinkit使用CSS动画来创建吸引人的易于自定义的动画。该集合目标不是提供所有浏览器的解决方案--如果你需要支持哪些还没实现CSS动画属性（像是IE9及之前的版本）的浏览器，你需要检测下这些动画属性并实现一个变通方案。
+
+6. Magic CSS3 Animation
+
+
+
+Magic CSS3 Animations 是一个特殊效果的CSS3动画库，你可以免费用于你的web项目。简单的引用CSS样式：magic.css或精简版magic.min.css即可。
+
+7.Bounce.js
+
+
+
+Bounce.js是一个用来生成不错的CSS3驱动关键帧动画的工具。用于生成动态动画的JS库是在该工具中投入使用。简单地添加一个组件，选择预设，然后你就会得到一个短URL地址或者导出到CSS。
+
+8. ImaCSS
+
+
+
+Imacss是用来将图像文件转换为数据地址的库和应用。该地址可以用来插入到CSS文件中作为背景图片。本质上来讲，它能让你减少所有你对你设计的图片（如图标等）的HTTP请求，并使之能够单个调用。
+
+9.Buttons
+
+
+
+Buttons是一个可以创建高度自定义、灵活和现代感十足的web按钮的CSS库。该库由Sass+Compass构建，支持正方形、圆角矩形或者圆形的按钮，并且可选是否扁平以及其他自定义的效果（如发光）。所使用到的尺寸、颜色、效果和字体可以通过变量的帮助进行修改，并且可以非常容易的进行扩展。
+
+10.OdoMeter
+
+
+
+OdeMeter是一个用来创建一些我们比较熟悉的如“汽车里程显示，机场信息板或角子机”等效果或者面板的JavaScript-CSS库。该库是独立式+轻量级（3kb）的，使用CSS为效果进行转换，所以效率极高（当然也有回退设置）。它简单地将一个给定的元素转换到另一个具有单行函数的预定义的值。
+
+11. Single Element CSS Spinner
+
+
+
+Single Element CSS Spinners是一个CSS螺旋动画加载的集合。每个旋转包含一个使用‘loader’ class的div，其文本内容为‘Loading…’。文本是为屏幕阅读器使用的且可用作老浏览器的后退的状态。
+
+12. Ani.js
+
+
+
+AniJS是一个CSS动画的声明处理库，它能够使开发更便利且能提高开发速度。它文档完善且易于上手。
+
+13. Beautons
+
+
+
+Beautons是一个用来创建漂亮、简洁按钮的易用库。你可以应用各种样式、函数已经其他的更多内容到按键上，包括改变它们的大小，设置它们的可用与否以及更多设置。
+
+14. Saffron
+
+
+
+Saffron是一系列Sass混合器和助手集，能够使添加CSS3的动画和过渡非常简单。只需要包括一个mixin在SASS声明中，然后使用变量和混合参数设置一些配置。使用Saffron，你能够完全控制动画和过渡的行为。
+
+15. CSS Shakes
+
+
+
+这是一个能够震动和晃动‘DOM’的CSS类集合。
+
+16. Typebase.css
+
+
+
+Typebase.css是个最小化的、可定制的字体样式表。它有less和SASS版本，所以能够很容易地修改融入现代的Web项目。它提供了所有排版所必要的基础工具且不需添加其他任何设计内容。它被创建用来完成项目发展和成长期时的修改，能和normalize.css很好的工作。
+
+17. Sassline
+
+
+
+在web上使用Sass & rems设置文本到基线网格。Sassline可以用在博客、prototyping以及其他Web项目。它有建议的基础字体样式和混合比例已达到基线网格的良好配合。为每个断点选择一个modular-scale，其运行响应将会更好。
+
+18. TypeSettings
+
+
+
+一个Sass工具包，基于modular scale有Ems风格，纵向风格，响应比基于headlines。
+
+19. Type Rendering Mix
+
+
+
+Type Rendering Mix是个小型的JavaScript库，它允许只有使用核心文本时（在iOS和OS X上）才应用样式，在实现更一致的渲染同时保持高精度原态。
+
+20. Hint.css
+
+
+
+Hint.css是一个使用SASS构建只使用CSS和HTML的提示库。该库使用数据属性、内容属性、伪元素以及CSS3转换。提示框简洁漂亮，有箭头且可放置在父元素的任何一边。
+
+ 
+
+30. ZOCIAL BUTTONS
+ 如果您正在寻找自定义的CSS图标。这里提供了有文字或图标的选项，如上图所示。
+29. WORKLESS
+ 这是一个相当干净的CSS3和HTML5框架为Web开发人员。框架提供了很多适用于表格，链接，按钮和图标的默认样式。该框架还提供了大量的代码片段，最终会为你节省大量的时间。
+28. SPRITEPAD
+ 这是一个在线的web应用程序。这是一个sprite资源在线运用。您可以在Photoshop中创建，也可以是一个麻烦，试试这个web应用。
+27. WEBINTERFACE LAB CSS SINPPETS
+ 这种特殊的资源提供了大量预建的CSS2和CSS3资源，以帮助您建立网站界面。它包括按钮，导航栏，工具提示和链接等。
+26. SOSA ICON FONT
+ 这恰好是在CSS社区的最新趋势。设计者倾向于基于图标设计包括字体面是独特的。帮助您简化侧边栏，导航链接。
+25. PROFOUND GRID
+ 您可以切换两种不同的布局，是流动的和固定的。这也许是这其中最好的部分。
+24. RESPONSIVE PATTERNS
+ 为了响应网页布局。如表单，表格，图像，反应灵敏，导航等。
+23. PREFIXR
+ 这样，当你在编写代码，还有的时候，你必须回去，并填写这些前缀。所有不同的浏览器有自己的CSS3属性的前缀，它是一种痛苦。这个资源可以让你做的是复制一个片段CSS3和自动填写在适当的前缀。
+22. PRINT.CSS
+ 如果你在网页中添加print.css中库，这将迫使一个典型的打印效果，在打印的网页，因此容易让你记住了哪些页面需要打印。
+21. PONDASEE
+ 您将需要建立一个简单的CSS设计工具包将包括所有的资源。这些组件包括 jQuery, Modernizr, HTML5, Boilerplate, and Normalize等
+20. ONE% CSS GRID
+ 这是一个免费的开源的CSS网格框架。它可以快速缩放我们的网站布局。它是基于一个12列设置。您可能要对它们进行测试。
+19. POLAROID IMAGES
+ 使用这一资源，建立一个自定义的CSS类。它会将一个白色的背景和黑暗的阴影，后面的任何图像。这使得图像看上去像一个旧的宝丽来照片。你甚至可以旋转图片。
+18. NORMALIZE.CSS
+ 这是一个对传统的CSS重置的开发库。典型的浏览器，例如表格元素和材料的格式与一般的风格，然后反映在所有的浏览器中显示。
+17. IVORY FRAMEWORK
+ 这是响应式CSS框架。
+16. MAKISU 3D MENU DROPDOWN
+ 这是一个很轻的的jQuery puglin，它可以帮助您创建3D下拉作用。这个名字应该说清楚，实际上看起来像Makisu它是向下折叠。提供的Makisu是建立在CSS 3D变换的3D效果，所以你应该只能够看到这些现代化更新浏览器的影响。
+15. GITHUB – STYLE SLIDING LINKS
+ 漂亮滑出链接效果，这是一个完美的资源为你显示文字的效果。你可以非常快速，方便地将这种影响在影响您的网站上。有趣的是，你可以做它用CSS代码。
+14. GOOGLE + UI BUTTONS
+ 如果你比较Google+与其他社交网络的用户界面，你会发现，它是清洁，非常好看的。
+13. CSS3 PICTOGRAM BUTTONS
+ 这种特殊的教程将说明如何使独特的按钮使用CSS3。所有你需要做的就是点击上面的链接，它会带你到本教程。
+12. CSSDECK
+ 有很多资源用来帮助你的代码。 CSSDeck是一个工具，它提供一个画廊的HTML / JS / CSS代码，帮助你的代码更快。它是免费的，这样你就可以继续前进，并链接上点击右键。
+11. CSS3 CHECKBOXES
+ 此页面提供了很多样式复选框。如果你厌倦了无聊的方式，然后访问本网站，里面创意，给我们一个全新的面貌。
+10. CSS TRANSITIONS
+ 如果您在您的网站寻找实现CSS3过渡，想得到一些想法，这是一个完美的地方。您可以创建一个多页的网站，它们之间的转换使用CSS3动画。点击上面的链接，查看演示。
+9. CSS3 BUTTON UI
+ 如果你有一个小的网页布局和你正在寻找快速建立一些按钮。为你打造高度自定义的按钮，可以保持它的简单和节省时间。
+8. CENTURION
+  
+7. BEAR CSS
+ 创建一组CSS样式表
+6. ANIMATED CSS3 WEB BANNERS
+
+5. ANIMATE.CSS
+使用CSS3可以建立自己的广告横幅。它甚至可能导致更高的点击率。 它使您可以快速添加CSS3的动画效果，表现完美的所有现代的Web浏览器对其进行更新。
+ 1140格完美地融入了1280显示器。在较小的显示器上，它变流体和适应的宽度！设计一次在1140，1280和用很少的额外工作将适应工作，几乎所有的显示器，甚至手机。
+ 他们都支持移动的响应内容。这包括下拉菜单和侧边栏。也应该调整你的图像，音频和视频组件。
+ 您可以创建自己的自定义Facebook的档案。此系统还为您提供测试你的布局，然后再应用在网站上的变化。它可以证明是有用的互动和营销目的。
+ 如果你知道你需要多少列，那么这也许是最简单的网格系统。
+
+
+10个值得前端收藏的CSS3动效库（工具）
+  技匠 关注
+2016.04.30 06:37* 字数 1194 阅读 8801评论 22喜欢 470
+现在的网站和App的设计中越来越重视用户体验，而优秀的动效则能使你的应用更具交互性，从而吸引更多用户的使用。我一般会在网站中加入一些简单而一致的动效，我所用的技术则是用SASS+bourbon来生成出那些基于CSS3的动画效果来。但如果你对CSS3中定义动效还不熟练，或希望采用更加简单直接的方式在你的应用中引入动效的话，你可以参考并使用下面的这10个优秀动效库（工具）。
+
+1. Animate.css
+
+Animate.css是我比较喜欢的一个CSS3动效库，非常适合那些对CSS3动画效果不熟悉，但又希望给自己所做的网站或基于H5的APP引入动效的朋友。因为，你只需要给需要实现动效的元素添加上Animate.css中预定义的那些动效名称就可以了。比如常见的：bounce，flash，fadeIn，fadeOut等等，加起来有75种不同的动效，完全能够满足你的基本需要了。
+
+
+当然对于这个库也有一些使用注意事项，比如你最好在给元素添加动效样式完成动效后，马上将这个动效样式去掉。另外，对于动效的时长，振动幅度等，你也需要做一些调整。因为，我感觉它默认设置中的动效过于快速和强烈了。Animate.css已经提供了详细的文档告诉你应该如何做这些调整。
+
+2. Bounce.js
+
+Bounce.js是一个能够生成CSS3动效的小工具，它是用JavaScript编写的，提供了一个Web界面，你可以添加一个组件然后就可以选择包括Scale，Translate，Rotate，Skew这些动效类型，然后分别设置它们的参数，当达到你想要的效果后，你可以将这个动效以CSS的方式导出，这样你就可以将它应用到你的应用中了。
+
+
+3. CSS3 Animation
+
+CSS3 Animation是一个非常简单易用的动效工具，你可以在它提供的简单图形界面里，通过拖拽一些进度条来控制你的动效，生成的CSS代码会自动显示在下面的一个文本框里，你可以拷贝粘贴到你的应用中直接使用。
+
+
+4. CSS Animate
+
+如果你觉得上面的工具还无法做出你想要的动效，那么可以看看CSS Animate这个工具。它能让你设置更多的动效参数，比如你可以同时设置动效起始和终止状态的坐标，大小，以及透明度，这样你就能够做出更加复杂的动效来。
+
+
+5.Magic Animations
+
+Magic Animations与Animate.css十分类似，也是一个预定义了一系列动效的CSS库。但与Animate.css的最大区别可能是，它定义的那些动效更炫也更酷一些，如果你的网站也很新潮，那可以考虑使用这个CSS动效库。
+
+
+6.AniJS
+
+AniJS是一个通过JavaScript控制的动效库。它允许你通过它的链式语法来定义动效。比如下面这个例子：当用户点击时这个元素会沿Y轴翻转。
+
+<div data-anijs="if: click, do: flipInY, to: .container-box"></div>
+
+7.Single Element CSS Spinners
+
+我们经常会需要一些动效来表达系统处于加载或处理数据的过程中。Single Element CSS Spinners这个在GitHub上的项目，提供了一组非常漂亮的可用于加载的CSS3动效。
+
+
+8.Snabbt.js
+
+Sanbbt.js是我很喜欢的一个动效库，它非常小巧只有5K，所以可以被用在移动应用中。而且它也支持链式语法，你可以很方便地写出复杂的动效组合。
+
+snabbt(element, {
+  position: [200, 0, 0],
+  easing: function(value) {
+    return value + 0.3 * Math.sin(2*Math.PI * value);
+  }
+}).snabbt({
+  position: [0, 0, 0],
+  easing: 'easeOut'
+});
+
+9.Odometer
+
+Odometer是用来给数字作动效的，比如通过它你可以很好地呈现网站人数的增加，倒计时等与数字相关的动画效果。
+
+
+10.Hover.css
+
+Hover.css提供了大量的Hover效果，包括2D变换，图标变换，背景变换等等。而且几乎可以应用于所有元素，包括链接，按钮，logo，SVG甚至图片等等。
+
+
+buttons
+
+
+
+第109章 断言库测试   
+需要随机库生成随机变量
+
+
+Mocha是一个JavaScript测试框架，可以在Node.js或浏览器中运行测试。它支持异步测试，并且经常与Chai配合使用，这样可以使测试代码以可读取的方式表达。
+Jasmine
+
+Jasmine   网站 jasmine.github.io 知识库 github.com/jasmine/jasmine-npm 当前版本 2.6.0 每月下载 200万
+Jasmine是一个行为驱动的测试工具，可以在浏览器中自动测试UI和交互。
+QUnit
+
+QUnit   网站 https://qunitjs.com/ 知识库 github.com/kof/node-qunit 当前版本 1.0.0 每月下载 25000
+QUnit是一个单元测试框架，可以在输入特定参数时，检查函数结果。它还上报测试结果，确保没有错过特定的代码分支。
+
+第110章 开发辅助功能
+json格式化校验
+JSON视图
+JSON压缩转义
+JSON生成Java实体类
+JSON生成C#实体类
+JSON在线编辑器
+JSON着色
+XML-JSON互转
+JSON和GET请求字符串互转
+Excel转Json
+json转csv、excel
+在线JSON转yaml,yaml转JSON
+
+
+Base64编码、解码
+MD5加密
+MD5解密
+DES,AES等对称加密解密
+RSA,RSA2公钥私钥加密解密
+SHA加密
+Escape编码
+URL编码
+Javascript Eval加密解密
+Javascript加密混淆
+摩斯密码加密解密
+unicode中文互转
+
+
+Javascript/HTML压缩、格式化
+CSS压缩、格式化
+XML压缩、格式化
+SQL压缩、格式化
+
+模拟HTTP请求工具
+在线模拟websocket请求工具
+获取你的IP
+获取IP信息
+IP定位周边信息
+获取您的浏览器信息
+常用USER_AGENT
+IP转数字,数字转IP
+TCP/IP子网掩码计算换算
+SSL协议套件探测
+
+
+代码生成   生成css  布局  样式
+
+模板制作  拖拽开发
+
+图床
+在线html转js,js转html
+fontawesome图标查询
+在线获取键盘按键值(keycode、ascii码)
+生成音乐播放器
+图片在线压缩工具
+在线代码编辑器
+在线photoshop
+H5模板在线制作
+在线生成圆角图片
+IOS安卓手机开发logo生成工具
+ICO图标在线转换工具
+RunJS在线编辑器
+ueditor在线代码编辑器
+在线调色板
+WEB安全色
+在线图片转Base64编码
+在线图片大小格式(支持webp)转换
+iPhone/iPad/Android UI尺寸规范
+阿里巴巴矢量图标库
+fontawesome矢量图标库
+SVG代码编辑预览
+常用JS资源库
+弹出窗口生成器
+自动排版工具
+
+JSON生成Java实体类
+●
+SQL生成Java JPA实现
+JSON生成C#实体类
+mysql转Java实体类
+oracle转Java实体类
+properties转yaml
+YAML、YML在线编辑(校验)器
+
+
+
+编码加密混淆
+
+
+
+驼峰转下划线,下划线转驼峰
+在线html转js,js转html
+在线ueditor富文本编辑器转markdown语法
+php反序列化成JSON和代码
+在线图片大小格式(支持webp)转换
+jpg,png图片在线转svg
+在线地图经纬度定位换算
+px转em,em转px
+在线图片转Base64编码
+unicode中文互转
+在线短地址转换
+Unix时间转换
+进制转换
+16进制到文本字符串
+字母大小写转换
+RGB颜色和HEX互转
+在线文档转PDF
+二维码生成与解码
+数字转中文(人民币)
+在线文件大小换算
+NATIVE/ASCII编码互转工具
+Html与UBB代码互相转换工具
+汉字转换拼音
+全角半角转换
+简繁体火星文互转
+Html转换为MarkDown工具
+视频秒转音频
+
+
+
+条形码生成器
+在线获取键盘按键值(ascii码)
+Cron表达式生成器
+Cron表达式校验工具
+临时网盘
+中英互译
+寻找图片、链接或xpath寻找元素
+文字对比找不同处
+正则表达式代码生成工具
+SQL追加或去除双引号
+去除重复字符串
+在线根据首字母排序
+在线文字识别
+获取QQ的SKEY
+在线查询wordpress主题模版出处
+根据微博图片寻找微博出处
+在线解压缩获取文件列表名
+
+
+
+短信接口API
+免费JSON接口
+收费JSON接口
+
+第111章 拖拽页面，代码生成
+
+
+第112章 动态demo
+跟据选项   改变样式
+
+做个属性窗口  输入属性
+和快速布局按钮
+
+css全布局   核心解释
+全特效
+
+vue绑定css对象,然后动态解析
+
+js全功能
+
+
+布局需求     宽高     平铺
+
+第113章 直接用hc组件开发
+布局是兄弟和父子关系
+
+第114章收集资源再开发
+
+
+第115章 下载几百组件示例
+
+
+第116章 可视化布局
+拖控件
+
+
+bootstrap
+
+ih5
+
+
+
+页面可视化搭建工具前生今世
+
+原文出处： CntChen   
+背景
+
+引子
+
+页面可视化搭建, 是一个历久弥新的话题. 更广义上讲, 页面是 GUI 的一部分, GUI 的拖拉生成在各种开发工具上很常见, 如 Android Studio, Xcode, Visual Studio 等. 前端页面早在十几年前就能用 Dreamweaver, Frontpage 等工具可视化搭建出来.
+
+Dreamweaver 操作页面示例:
+
+
+
+但是现在已经很少人使用 Dreamweaver 了, 其主要原因是页面承载的内容已经和页面源码分离, 由后端接口返回再渲染到页面, 静态页面网站无法承载大量的动态内容.
+
+Dreamweaver 死了, 但是页面可视化搭建工具依然广泛需要和使用, 所以这个话题依然值得探讨.
+
+文章内容
+
+页面构成和页面组件化.
+页面可视化搭建工具的必要性.
+页面可视化搭建工具的区分维度.
+业界的实践实例.
+页面
+
+页面是 HTML / DOM
+
+页面可视化搭建的操作对象是页面. 页面是一份 HTML 文档, 不管是静态页面还是动态渲染出来的页面, 在页面上看到的内容, 都是 HTML 文档的一部分.
+
+对 HTML 文档的实例化和操作, 通过文档对象模型(DOM)来实现, 也可以说页面是一个 DOM. 本文没有严格区分 HTML 和 DOM 这两个概念, 以下行文都用 HTML 这个概念.
+
+HTML 使用一种树形结构来表示页面, 树的每个节点为一个页面元素或文本节点, 一个页面元素可以包含多个页面元素节点或文本节点. 页面元素通常称为标签, 页面元素类型由 HTML 规范定义.
+
+HTML 结构示例:
+
+
+
+https://www.w3schools.com/js/js_htmldom.asp
+页面是 HTML Tree + Data
+
+从前端开发的角度, 可以认为页面是由 HTML Tree 和 Data 组成, HTML Tree 是页面元素的树形结构, Data 是页面元素的属性或文本节点. 下图中蓝色框所示的节点可以认为是数据.
+
+
+
+为什么从前端开发角度会说页面是 HTML Tree + Data? 举一个常见场景来说明: 在开发新页面时, 我们是可以复制已有页面(好吧, 我就是这样的前端工程师), 然后只修改页面 HTML, 或者只修改数据, 或同时修改 HTML 和数据, 从而完成新页面的开发.
+
+静态页面和动态逻辑页面
+
+上一节说页面的由 HTML Tree 和 Data 组成, 讨论的是静态页面.
+
+
+
+浏览器请求静态页面, 网络返回的 HTML 源码就是页面渲染完成后的 HTML. 静态页面的源码和页面渲染结果一致:
+
+
+
+当下, 前端页面更多的是有动态逻辑的页面, 在页面中引入和使用动态脚本(Javascript)对页面进行修改和控制.
+
+
+
+浏览器请求动态逻辑页面, 网络返回的 HTML 源码与页面渲染完成后的 HTML 有差异. 动态逻辑页面的源码和渲染结果有差异:
+
+
+
+页面组件化
+
+页面渲染后是一棵 HTML 元素构成的树, 页面的可编辑粒度为 HTML 规范定义的 HTML 元素.
+使用 Web Components 组合 HTML 元素, 实现了功能封装和可复用的页面组件. 在流行的前端框架中, 都提供了组件化的功能, 从前端框架的视角看, 页面是由组件树组成. 这些组件内部维护自身的 HTML 元素结构、样式和功能逻辑, 并通过组件的 props 获取外部传入的数据, 实现了功能封装和复用.
+
+Vue 组件树示例:
+
+
+
+https://vuejs.org/v2/guide/#Composing-with-Components
+并没有讨论 CSS
+
+在以上的章节中, 我们并没有讨论决定页面样式的 CSS. 因为借助 Javascript 的动态逻辑, CSS 可以归入到 Data 的范围: 通过对页面元素 style attribute 的修改, 或将 CSS 属性动态添加到<style>标签中，可以实现对页面元素样式的修改。
+
+页面可视化搭建
+
+有了对页面组成的认知基础，可以对页面可视化搭建有更多的讨论: 页面可视化搭建是什么? 为什么需要?
+
+是什么
+
+如前文所阐述, 动态逻辑页面分解为 HTML Tree, Data 和 Dynamic Logic. 前端开发工程师开发前端页面的过程, 本质上是用编程工具(IDE)对页面的 HTML Tree, Data 和 Dynamic Logic 进行增删和修改.
+
+页面可视化搭建, 是用可视化交互的方式对页面的 HTML Tree, Data 和 Dynamic Logic 进行增删和修改, 从而实现页面的生成. 页面可视化搭建工具是实现页面可视化编辑的软件工具.
+
+用页面可视化搭建工具来搭建页面与前端工程师在页面上搬砖, 都是搭建页面, 区别在于实现页面搭建的方式. 做个简单对比:
+
+差异点	编程开发页面	可视化搭建页面
+技能要求	需要编程基础	可以没有编程基础
+操作方式	在代码编辑器中编写代码	在可视化搭建工具中拖拉/填表/编写代码
+为什么需要
+
+任何工具的存在都是更高效地解决问题. 页面可视化搭建工具, 用于解决页面生成的效率问题.
+可能前端工程师会觉得最有效率的页面生成方式是打代码, 但有搭建页面需求的不只是前端工程师. 而可视化页面搭建工具, 恰恰是面向”就缺一个前端工程师”的人员, 用于提升他们生成页面的效率.
+我们可以从一些使用场景来窥探页面可视化搭建工具的应用场合.
+
+页面小白做 H5
+
+页面小白不需要任何页面相关的知识, 不需要了解 HTML/JS/CSS 这些概念, 只要像使用 Word 一样在 H5 制作工具上操作, 就可以做出一个挺漂亮的页面. H5 制作工具很多, 其中 百度H5 做很好不错.
+
+如: 小陈女票要生日了, 小陈为女票做了一个有创意的生日祝福页面:
+
+
+
+营销活动页面搭建
+
+大多数互联网公司需要做许多的活动页面来承载运营业务. 运营活动页面的特点是: 页面功能大同小异、需求急、时间紧、下线快、研发性很比低. 前端工程师无法持续开发无穷无尽的活动页面, 需要采用活动页面可视化搭建工具, 由运营人员/产品人员直接生成活动页面. 研发人员的工作转变为提供满足活动页面业务需要的活动模板.
+
+如: 抽奖活动页面的可视化搭建:
+
+
+
+中后台系统开发
+
+在公司内部, 需要做许多的中后台支持系统, 这些系统的管理端一般用 web 页面承载. 那么问题来了, 中后台系统的前端工程, 怎么保障可用性、可维护性和页面呈现一致性? 这些系统与后台逻辑强关联, 一般由后台开发人员开发; 后台开发人员写代码逻辑是没有问题的, 但是其前端开发能力相对较弱. 所以需要增强他们开发前端页面的能力, 前端开发能力由前端服务化提供.
+
+前端服务化的第一种方式是提供一套组件库, 如 饿了么的 Element.
+组件库一般由前端开发人员封装成模板工程, 模板工程提供公共样式和函数库, 并对编写的代码做校验和约束, 一定程度上降低了前端开发难度, 统一后台人员代码风格. 此时后台开发人员的开发方式为: 在代码中用组件拼凑页面, 然后写代码逻辑.
+
+前端服务化的第二种方式, 是提供页面可视化组装系统, 这个系统输出组装后的前端工程源码. 这样的系统比提供组件库和模板工程的方式走得更远: 通过可视化生成模板工程, 后台开发人员不需要在代码中拼凑前端页面, 不需要关注前端组件, 只需要编写代码逻辑.
+这种方式可以参考阿里的 ice.
+
+阿里 ice 示例:
+
+
+
+前端服务化的终极方式, 是直接提供一个开发的 IDE, 将动态逻辑的书写也在 IDE 中完成.
+如 美团外卖前端可视化界面组装平台 —— 乐高, 前端服务化——页面搭建工具的死与生.
+
+美团乐高示例:
+
+
+
+前端服务化
+
+更加广泛来说, 为页面小白/运营人员/产品人员提供的页面可视化生成工具, 也是赋予以上人员前端开发的能力. 所以页面可视化搭建, 本质上是前端服务化的一部分. 前端服务化总结, 可以看百度的 前端即服务-通向零成本开发之路.
+
+页面可视化搭建工具区分维度
+
+有了前文对页面的基础认知, 终于进入了本文的正题 — 页面可视化搭建工具.
+前面已经零星讨论过页面可视化搭建工具的定义, 再总结一下: 页面可视化搭建, 是指用可视化交互的方式(对比编写代码的方式), 实现页面的修改或生成; 页面可视化搭建工具, 增强了使用者的前端开发能力, 提升了使用者修改或生成页面的效率.
+
+思考一个更具体的问题: 当我们讨论页面可视化搭建工具时, 怎么进行描述和讨论? 换个角度提问题: 可以从什么维度对页面可视化搭建工具进行描述和区分?
+
+页面可视化搭建工具的区分维度包括:
+
+系统功能
+面向客群
+编辑自由度
+下文会对页面可视化搭建工具的区分维度做介绍, 并会对每个区分维度提供示例(这些示例不会展开讨论, 且在不同维度下会多次使用同个示例).
+
+系统功能
+
+页面可视化搭建工具的系统功能是指该工具在解决特定页面可视化搭建问题上提供的核心能力.
+页面是由HTML Tree, Data 和 Dynamic Logic 三部分组成, 一个页面可视化搭建工具提供的能力是编辑页面组成部分之一或多部分. 对基于组件的页面, 其可编辑单元为组件, 此时采用 Component Tree 概念取代 HTML Tree.
+
+
+
+HTML Tree 编辑
+
+这类页面搭建工具专注于可视化地编辑页面 HTML Tree 部分, 一般可以对页面做自由度较高的编辑.
+其关键功能在于高自由度: 几乎可以编辑页面可见的所有元素, 能自由修改页面结构、页面元素样式和页面数据, 采用类似 Word, Photoshop 的可视化编辑方式.
+这类工具一般只适用于生成逻辑比较简单的页面, 其中原因后续会讲.
+常说的 H5 制作工具就是指这类工具.
+
+如: 百度H5、iH5
+
+Component Tree 编辑
+
+这类页面搭建工具针对组件化的页面, 主要实现 Component Tree 的可视化编辑. 其核心功能在于页面布局设计: 在 UI 组件列表中选择合适的组件, 通过拖拉的方式将组件嵌入到页面中, 生成带布局和样式的页面.
+
+如: ice 阿里飞冰、vue-layout
+
+vue-layout 示例:
+
+
+
+https://jaweii.github.io/Vue-Layout/dist/#/
+页面 Data 编辑
+
+这类页面搭建工具专注于可视化地编辑页面的 Data 部分, 如图片URL、按钮文本、按钮跳转链接等.
+这类搭建工具主要针对 HTML Tree 比较固定、能承载复杂业务逻辑的页面. HTML Tree 固定的常见方式是页面组件化, 只需修改页面组件的 Data 就能快速地生成页面.
+其核心功能在于快速搭建承载业务逻辑的页面.
+通常营销活动页面就采用这种方式来可视化搭建.
+
+如: 阿里云凤蝶、开源的 pipeline
+
+阿里云凤蝶示例:
+
+
+
+Dynamic Logic 编辑
+
+这类页面搭建工具支持在界面上输入逻辑代码, 实现页面 Dynamic Logic 编辑, 如后台接口请求逻辑, 业务判断逻辑等.
+这些逻辑代码需要有合适的插入点, 一般在事件钩子中提供插入点, 如页面 onload、网络请求状态变更、按钮事件、数据变更等.
+做到可以支持编辑 Dynamic Logic 是超牛逼的事情, 这类工具对页面的理解最深入, 对开发者的技术能力、前端架构能力和开发能力都要求很高.
+
+如: 前端服务化——页面搭建工具的死与生
+
+系统功能组合
+
+还有其他系统功能的组合, 可以综合上面的典型类别来做讨论.
+
+面向客群
+
+页面可视化搭建工具的面向客群是指工具的使用客群. 不同的使用客群, 其对页面技术的认知程度、搭建页面的诉求有所不同, 所以可以从工具的面向客群来区分不同工具.
+
+
+
+前端小白
+
+前端小白是不具有前端知识的人群, 他们对页面可视化搭建工具的诉求是交互性越高越好. 最适合他们的工具是像 Word, Powerpoint, Photoshop 等具有丰富交互功能, 且所见即所得的页面搭建工具.
+同时他们也不关心页面最后用什么方式托管到互联网上, 页面编辑完成后要帮他们在公网上托管页面, 并提供页面链接, 方便前端小白将页面发给自己的女朋友.
+
+如页面界的 Photoshop:
+
+
+
+https://www.ih5.cn
+运营/产品
+
+运营、产品人员没有开发人员页面开发、逻辑编程的能力, 他们的诉求是可以快速搭建活动、产品页面. 活动、产品页面是承载着业务逻辑的: 如包含领取优惠券功能、背景音乐播放功能、产品购买功能等. 运营、产品对页面可视化搭建的另一个诉求是“快速”: 一天好几个活动, 怎么快怎么来.
+面向运营、产品的可视化搭建工具, 需要将页面的逻辑功能封装在页面区块内, 支持通过点击来选择区块, 然后在表单中编辑区块所需数据, 只对页面进行少量编辑就完成业务页面搭建.
+如领取优惠券的页面, 运营、产品只要在表单中填入优惠券的 ID, 然后就快速生成领取该优惠券的页面, 不需要关心优惠券在页面上如何展示和被领取的具体逻辑.
+
+如, 开源项目 pipeline:
+
+
+
+中后台开发人员
+
+中后台开发人员具有逻辑编程能力, 但其前端开发能力比较弱. 中后台开发人员的诉求是, 在开发中后台系统的 Web 管理端时, 不需要进行重度的前端页面结构和样式开发, 可以专注在逻辑和数据处理上.
+这要求页面可视化搭建工具提供页面搭建的区块, 对区块进行可视化组合来输出一个基本的前端页面; 并在页面搭建工具上提供业务逻辑编写的输入点, 或将基本前端页面源码导出到 IDE 中供中后台开发人员进行业务逻辑的开发.
+
+如: ice 阿里飞冰
+
+前端工程师
+
+要啥页面可视化搭建工具, 抓起键盘就开始干.
+
+
+
+编辑自由度
+
+页面可视化搭建工具的编辑自由度, 是指页面可编辑单元的粒度. 前端页面的可编辑单元为 HTML 元素; 从前端页面组件化的角度, 页面可编辑单元为组件.
+不同的编辑自由度的选择, 是可视化搭建工具在不同业务场景下编辑自由度与编辑效率的平衡.
+
+
+
+编辑自由度为 HTML 元素(左)与自由度为组件(右)的示例:
+
+
+
+编辑自由度为 HTML 元素
+
+编辑自由度为 HTML 元素的页面搭建工具有以下特点: 可编辑的元素丰富、页面结构灵活、可视化编辑效率较低、业务逻辑封装度较低.
+这类工具的可编辑单元为 HTML 元素, 可以编辑元素的文本、样式和行为, 可编辑的元素较丰富; 并且可以组合各种 HTML 元素到页面中, 生成的页面结构灵活; 从生成页面的角度, 编辑出一个页面需要从基本的 HTML 元素开始搭建, 可视化编辑的工作量较大; 一个业务功能的实现, 通常需要渲染多个 HTML 元素, 而这类工具可以自由增删业务所需的 HTML 元素, 这导致无法固定地承载业务功能, 所以这类编辑工具生成的页面, 业务逻辑封装程度较低.
+
+如: iH5、vvveb
+
+vvveb 示例:
+
+
+http://www.vvveb.com/vvvebjs/editor.html
+编辑自由度为前端框架组件
+
+编辑自由度为前端框架组件的页面搭建工具有以下特点: 可编辑的元素依赖搭建工具提供的组件, 可视化编辑效率较高、业务逻辑封装度较高.
+这类工具的可编辑单元为前端框架的组件, 这些组件需要开发并导入到页面可视化搭建工具中; 组件的渲染结果包含了多个 HTML 元素, 所以从生成页面的角度, 编辑出一个页面只需要组合组件, 可以较快速完成页面生成; 组件本身承载了特定的业务功能, 所以这类编辑器生成的页面, 业务逻辑封装程度较高.
+对于嵌套的组件, 需要重点解决组件数据流和组件布局适配.
+
+如: Vue-Layout
+
+vue-layout 示例:
+
+
+
+不嵌套的前端框架组件
+
+移动端的页面, 常用的布局策略是: 宽度铺满, 高度滚动. 如果前端框架组件都设置为铺满宽度, 页面展示时组件只需在浏览器垂直方向上顺序排列, 则组件组合时候不需要嵌套, 所有组件互为兄弟节点. 这种铺满宽度的组件, 非常适合搭建移动端页面的场景: 在承载页面逻辑的同时, 使得页面的编辑更加简单, 使用者只需要处理组件的顺序, 不需要处理组件的嵌套.
+
+如: 阿里云凤蝶、pipeline
+
+pipeline 示例:
+
+
+https://page-pipepline.github.io/pipeline-editor/dist/#/
+理想的页面可视化搭建框架
+
+页面可视化搭建工具, 需要对页面做一些约定和约束, 在可视化搭建时遵循工具约定和约束来编辑页面. 更全面讨论页面可视化搭建工具时, 不只是关注工具本身的功能, 还需要关注工具的依赖和约束, 如页面可视化搭建工具的组件化方式、模板组织方式、编辑功能实现方式等. 从工具开发的角度说, 页面可视化搭建工具是需要架构设计的, 不同工具的区分, 其实是不同的页面可视化搭建框架间的差异.
+
+在互联网公司中, 广泛运用页面可视化搭建工具来支持运营活动页面的生成, 本章我们只探讨运营页面搭建工具的理想框架.
+
+页面可视化搭建框架的核心是实现页面的可视化编辑. 运营页面搭建工具, 声明页面配置数据并提供配置表单, 通过对配置表单的数据填充, 实现基于模板的页面生成. 如图所示:
+
+
+
+可视化编辑
+
+配置数据
+
+对页面的可编辑部分, 需要准确描述可编辑部分所需的配置数据; 配置数据是异构的, 不同页面、不同区块的配置数据各不相同. 所以需要对不同页面、不同区块定义各自配置数据的数据结构和字段类型.
+理想的配置数据格式为 JSON, 因为其格式灵活, 前端友好; 理想的配置数据描述格式为 JSON Schema, 因为其支持表单动态生成和数据校验.
+
+配置表单生成
+
+采用 JSON Schema, 容易生成配置表单, 只要按照 JSON Schema 对 JSON 数据的描述, 可以动态渲染出配置表单. 并且可以采用 JSON Schema 对编辑后的数据做格式校验, 避免编辑错误.
+
+如配置表单自动生成工具 json-editor:
+
+
+
+组件化
+
+组件是对 HTML 元素、元素布局和样式、业务逻辑的封装, 通过组件化的方式, 将页面的搭建转化为对组件的组合, 大大减低了运营页面生成的编辑工作量, 实现快速搭建承载业务逻辑的运营页面.
+
+如 pipeline 的页面组件化:
+
+
+
+模板
+
+模板是带有默认数据的页面; 对于组件化的页面, 模板是从组件库中选取部分组件, 并带有各个组件的默认数据.
+采用模板生成页面, 只需对模板进行少量编辑即可实现页面快速生成.
+
+与编辑系统解偶
+
+编辑系统和组件解偶，组件只需要遵循编辑系统的组织约定, 其具体开发过程和承载的逻辑与编辑系统无关, 支持自由拓展页面组件.
+编辑系统与模板采用的前端框架解偶, 在遵循编辑系统约定下, 可以选择不同的前端框架.
+
+理想的运营页面可视化搭建框架
+
+采用 JSON Schema 声明配置数据, 配置表单自动生成.
+采用组件化和页面模板实现页面生成效率的提升.
+编辑系统与组件、前端框架、模板解耦.
+在遵循编辑系统约定下, 组件可以自由拓展, 前端框架可以自由选择.
+页面可视化搭建工具举例
+
+列举一些页面可视化搭工具, 并附带少量点评.
+
+阿里云凤蝶
+
+移动建站平台
+支持页面 Data 编辑, 面向运营、产品人员, 编辑自由度为无嵌套的组件.
+目前制作运营、活动页面功能上最好的工具.
+提供页面搭建的模板, 并支持自定义模板.
+配置表单基于 Schema 生成, 配置表单操作功能完善.
+ice 阿里飞冰
+
+飞冰 – 让前端开发简单而友好
+支持 Component Tree 编辑, 面向中后台开发人员, 编辑自由度为无嵌套的组件.
+使用”物料-区块”, 非前端开发人员可以快速搭建出可用、符合规范的页面.
+页面以源码方式输出.
+前端服务化的一种方式.
+百度H5
+
+创意，绝不雷同
+支持 HTML Tree 编辑, 面向前端小白, 编辑自由度为 HTML 元素.
+做 H5 的好工具, 功能上很强大, 对动画的编辑功能做到细致.
+美团外卖前端可视化界面组装平台 —— 乐高
+
+支持 Dynamic Logic 编辑, 面向中后台开发人员, 编辑自由度为可嵌套的组件.
+前端服务化的一种方式.
+在美团内部支持了许多业务页面, 没有公网服务, 了解该系统只能通过其介绍文章.
+esview
+
+Drag vue dynamic components to build your page，generate vue code.
+开源项目, 模仿美团点评的乐高.
+
+完整的可视化页面搭建框架, 面向中后台开发人员.
+页面布局结果看起来比较乱, 自定义组件写法比较诡异; 没有融合业务逻辑, 不支持在框架中写页面的代码逻辑.
+gaea-editor
+
+Design websites in your browser
+开源项目.
+
+支持 Component Tree 编辑, 面向中后台开发人员, 编辑自由度为可嵌套的组件.
+页面的拖拉生成, 实现得很完整.
+用于页面设计, 所以偏向页面元素的样式控制.
+技术文章对可视化搭建工具数据流有深刻理解: 可视化在线编辑器架构设计.
+Vue-Layout
+
+基于UI组件的Vue可视化布局、生成.vue代码的工具。
+开源项目.
+
+支持 Component Tree 编辑, 面向中后台开发人员, 编辑自由度为可嵌套的组件.
+工具的使用体验效果不错.
+gen
+
+根据接口生成页面，减少重复性工作
+开源项目, 用起来感觉不错.
+系统中有好几个概念, 开始比较难上手.
+其他
+
+请使用关键字 website-builder, site-builder 等关键字进行搜索.
+VvvebJs
+grapesjs
+Maha
+有赞微页面
+X-Page-Editor-Vue
+业界实践
+
+列举一些业界在页面可视化搭工具上的实践, 并附带少量点评.
+
+前端服务化——页面搭建工具的死与生
+
+支持 Dynamic Logic 的页面可视化搭建 IDE.
+讲解了页面可视化搭建框架支持 Dynamic Logic 的可行性和设计架构.
+作者在前端框架和 IDE 方面写了好几篇文章, 很深刻.
+腾讯IMWeb: 积木系统，将运营系统做到极致
+
+2015年的文章! 完全说到点上.
+
+简单易用的、可视化的可编辑页面.
+通用的、简便地组件接入机制.
+组件: 开发过程和系统无关, 逻辑和系统无关.
+美团外卖前端可视化界面组装平台 —— 乐高
+
+把系统架构将得很清楚, 有借鉴意义.
+对页面组成做了分析, 阐述了可视化配置的原理.
+前端即服务-通向零成本开发之路
+
+百度的前端服务化实践, 都在这一篇.
+
+可视化在线编辑器架构设计
+
+可视化在线编辑器属于前端开发引擎, 前端进入了前端工业时代.
+深入讨论了组件数据流.
+百度外卖如何做到前端开发配置化
+
+PPT 将原理和架构讲得很清楚.
+使用流程图很清晰.
+项目开源了 — block, 试用起来功能比较简陋.
+转转运营活动高效开发有哪些秘诀
+
+基于组件的页面生成系统-魔方, 采用 npm 管理组件.
+
+QQ会员: 如何保证H5页面高质量低成本快速生成
+
+内部 ET 平台, 包含活动管理的其他功能.
+
+vue-design 桌面端页面可视化构建程序
+
+esview — 这可能是目前最好的vue代码生成工具
+
+总结
+
+页面由 HTML Tree, Data, Dynamic Login 组成.
+页面可视化搭建工具用于提升各类人员的页面搭建效率.
+页面可视化搭建其实是前端服务化的方式.
+页面可视化搭建工具需要平衡自由度和效率.
+组件和模板是页面可视化搭建框架的核心.
+全文结束, 本文对页面可视化搭建思考和讨论可能还不够完整, 欢迎讨论和补充.
+
+第117章 一个个模块地写
+
+
+第118章 响应 自动换行
+
+
+第119章 vue组件布局
+写组件名吗？
+
+
+页面整体布局，小块的内部布局
+
+
+row   col思想
+sm  md   lg   
+
+布局组件  '<row>栅格布局
+
+
+格子定宽
+
+
+浮动margin定位什么的怎么还不淘汰
+
+第120章 做编程交互游戏
+
+
+第121章 遍历元素nthchild
+选择  父元素的子元素  可以是个数或者间隔
+
+
+其实是取同级的某些元素
+div  p;first child   div下的第一个p
+
+
+相邻只支持后面
+
+可以用分组实现子控制父吗
+
+
+用兄弟元素代替父元素，控制层级就行了
+
+第122章 修改focus元素样式
+
+
+第123章 ajax请求本地文件,j t
+
+
+第124章 file和相对目录的区别
+
+
+第125章 自动补全和语法检查
+监听input   在输入.时弹出
+
+
+
+1   遍历数组，不太好的实现  但是在匹配组需要用到吧
+
+2  key前缀 map    写个关联数组   对象就行了
+3   随着输入缩小范围     正则
+
+4弹出一个选择列表，回车选择后，自动输入到输入框   或者是页面
+
+5  补佺后光标跳转到参数  或者行尾
+
+6   问题 是函数库  怎么实现    如何收录所有的函数和属性
+如果引入新库新变量   如何收录
+
+客户输入提示
+
+遍历层次    类实例属性   这首先需要判断对象类型    constructor
+还要遍历原型属性  方法
+
+分开function类型  以及其他类型
+
+关于全局变量，全局函数，局部变量(无须)，参数没有type难以确定
+
+
+js 因为 是动态类型，非常麻烦。。。ts静态类型固定了其属性
+
+
+
+最好把结果缓存下来。。。不要输入的时候分析
+
+
+遍历法有几个
+
+第126章事件机
+数组中保存回调 函数   和需要监听的事件类型
+
+发布事件，遍历回调数组  检查注册的事件类型，传入事件对象参数执行
+
+第127章 python和go erlang
+cowboy
+
+
+写api
+
+第128章 import避免命名冲突
+
+
+第129章 资料收集动态检索工具
+输入中动态列表渲染，一键打开
+
+第130章 api文档工具
+
+
+第131章 网游socket教程
+建立socket长连接
+
+send数据    数据格式可以用json或者其他方便解析的    内容      
+
+消息类型     属性 值    
+
+发送数据    命令  移动      目前坐标 目前hp
+
+读取数据   保存到内存或者数据库
+
+推送数据给同屏/房间所有人，定时推送，事件推送
+
+遍历数据 ，遍历客户端
+
+同步显示对方的操作
+
+
+比如打开他人面板，看属性
+
+
+根据接受的数据来控制显示    
+
+第132章 processing  d3
+
+
+第133章 apidoc
+
+
+第134章 3d雕刻3d建模2转3
+原图
+
+捏外形    快速制造3d模型的工具
+
+简模   
+
+贴图
+zbrush做细节
+议使用mudbox，或3Dcoat 建模方法类同Zbrush，Mudbox与3DCoat比较容易上手学习几小时就会理解建模方法
+
+z捏高模 贴图
+ 转低模  ，不然跑不动
+
+
+uv
+动作  
+
+骨骼
+
+第135章 快速建模
+
+
+第136章 地图编辑器
+
+
+第137章 云产品同步
+
+
+第138章 思维导图和笔记
+圈
+泡
+双泡
+树
+流程
+多重流程
+
+风格
+结构   
+主题   矩形   三角   胶囊    颜色  线形  宽度 
+
+
+
+
+用途
+笔记  关系  提纲  计划   抉择
+读书笔记
+
+
+需求分析
+
+产品功能设计
+流程图
+
+第139章 代码折叠
+
+
+第140章 常用代码模板
+
+
+第141章 电子硬件
+
+
+第142章 jsp连接后台servlet跳转
+
+
+第143章 请求响应过滤器
+
+
+第144章 easyswoole  swoft
+
+
+第145章 下代码打注释
+
+

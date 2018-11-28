@@ -1,0 +1,202 @@
+
+客户端，服务器
+mySQL命令行模式和phpMyAdmin,里面也可用sql语句，要分号
+
+DBMS RDBMS
+
+
+不同的数据库软件的指令是不一样的
+
+
+数据库怎么用于网页？和交换？
+
+库 表 行列   列类型
+
+test练习库
+
+dml使用增删查改
+ddl定义
+dcl管理员，权限
+
+查 取 创 改 删 插 视图 存储过程 权限
+
+datebase库 use 库名  create 
+show datebases
+show tables
+
+
+建库 create database 库名;
+alter database修改
+creatr table 表名{列名1 数据类型，列名2 数据类型2……};
+
+数据类型整数int 字符char 日期date varchar(可变长度字符串）等
+
+修改表结构
+alter table
+drop table 表名 删除
+
+
+create index创建索引
+
+truncate table 表名 清除表内容
+
+
+
+
+alter table 表名 add 列名 数据类型  表里添加列
+alter table 表名 drop 列名 数据类型  表里删除列
+
+alter table 表名 alter column 列名 数据类型  改变数据类型
+
+
+
+auto_increment自动生成主键值，在创建表时，列于列类型之后，可定义列为主键，不必规定值。
+定义初始值 ALTER TABLE 表名 AUTO_INCREMENT=100
+
+
+
+
+create index 索引名 on 表名（列名）   注意这个括号是语句，不是或者的意思
+
+
+drop index 索引名 on 表名
+
+
+
+建表的约束
+creatr table 表名{列名1 数据类型 约束条件};注意不是所有约束都是这格式
+约束条件有 not null 禁止为null
+
+unique约束在列名末尾,unique(列名)
+
+
+primary key在列名末尾,primary key(列名)
+foreign key在列名末尾,foreign key(列名) 指向primary key
+
+
+
+
+check在列名末尾,check(列名>0)  为列设置条件
+default在列名末尾,default(列名) ’默认值'向列中插入默认值
+
+
+
+
+
+creatr table 表名{列名1 数据类型 约束条件，列名2 数据类型 约束条件，}engine= default charset=
+
+
+
+
+
+
+insert into插入数据
+
+insert into 表 values(值1，值2）   按顺序插入行
+insert into 表 （列1，列2） values(值1，值2) 插入一行，但只插入规定的两列中。
+
+update更新
+
+update 表明 set 列名=新值 where 列名=某值   修改一个值
+
+
+delete from 表明 where 列名=某值    删除被选定的行
+
+
+
+select 
+
+select 列名 from  表名;   选出来的包含在结果集中，可用编程函数导航，select 怎么选行？
+       *所有的列
+       列1，列2 
+       distinct列名 from表;不同选择，排除相同
+       列名 from  表名 where city=='Beijing’;条件选择，只用单引号，数值不用引号
+
+       select top 2(50 percent) * from 表名 选取前两（百分五十）行，注意*不能丢
+ 
+
+where中  and  or连接两个条件并与否
+where 列名 like 模式如'N%',通配符正则？  用于筛选模式
+通配符是用来代替文字的通用字符，可以代表所有字符，比如N%，由于%可以指代1个或多个任意字符
+N%就可以代表以N开头的所有单词。根据通配符位置不同代表不同意思
+
+%指代一个或多个字符，_只指代一个字符，比如c_l_r，
+
+select * from 表 where 列名 in(值1，值2）多个条件值
+                           between  值1   and 值2 ，两个之间，文字值要''数字不需要
+
+
+select 列 from 表 as 别名，表名和列名都可以用别名。 
+
+select 列 as 别名 from 表 
+
+
+表的引用
+
+select 表名1.列名1，表名2.列名2 from  表1，表2 where 不同表列共同引用
+
+select 表名1.列名1，表名2.列名2  from 表1 inner join 表2 on 条件 
+                                          left  join  左表为主全显示，不一定和右表匹配（右表可缺行）
+                                          right join   右表为主
+                                          full  join    不管缺不缺行都连接在一起。
+
+
+
+
+
+
+select 列名 from  表名1 
+union (union all) select 列名 from  表名2; 
+合并两条指令的结果
+
+
+select 列名 into  新表 from 旧表;  旧表内容加入新表，可以制作备份
+
+
+
+
+
+select 列名1，列名2 from  表名 order by 列名1，列名2升序排列，按该列字母或者数字，降序排列，在列名后再加desc
+
+
+
+
+
+
+
+视图是基于 SQL 语句的结果集的可视化的表。
+创建视图
+create view 视图名 as select 列名 from 表名 where 条件
+查询视图
+select * from 视图名
+更新视图
+添加create view 视图名 as select 列名 from 表名 where 条件
+替换replace view 视图名 as select 列名 from 表名 where 条件 
+drop view 视图名
+
+
+日期函数，日期数据类型
+
+
+
+
+null
+
+选取null项
+select 列 from 表 where 列名 is null
+select 列 from 表 where 列名 is not null
+
+
+
+
+
+
+
+
+
+ground分组统计
+having筛选结果集
+order by排序
+limit
+union查询
+主键 视图

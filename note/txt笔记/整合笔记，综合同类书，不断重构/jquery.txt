@@ -1,0 +1,40 @@
+一、功能：取得元素 修改样式 改变内容 交互响应 动态页面 ajax  大量使用了匿名回调函数  1、引入jq 2、创建jq对象 $(选择器) 3、开始$(document).ready(fuction(){ }) 或$（function(){}） 回调  ready是指在dom加载后立即运行  
+二、选择器 元素 ID 类 父子> 兄弟+  否定:not  1、选择元素$() 2、给元素增加类 .addClass（"类名"） 3、属性选择器[属性=值] 5、自定义选择器 $().eq(n) 第n个被选中元素 6、偶数选择器:even 奇数选择器:odd  7、上下文选择器 :contains("内容") 9、表单选择器 :input :button :select  10、遍历方法（1）过滤 $().filter()  .filter(function(){}) (2)
+下一个元素$().next() 上一个 .previous() 之后所有元素.nextAll() 之前所有元素 .previousAll() 所有兄弟元素 .siblings() 包含自己的所有兄弟元素  父元素.parent() 所有子元素.children() 11、元素访问 var =$()
+.get(0) 或[0].tagName
+
+三、事件 1、.ready() 2、简单事件 $(触发事件元素).on("事件",function(){被改变元素})  3、回调函数中$(this)指代当前触发元素 4、添加类 .addClass("类") .removeClass（"类"）
+切换类.toggleClass() 4、简写事件.click(function(){被改变元素 }) .blur() ,keydown  5、显示隐藏 $().hide() .show()   6、悬停事件 .hover(function(){移入},function(){移出})  7、 jq是事件冒泡，事件会在父子元素上都触发。   在鼠标移入移出时会 有问题 8、事件对象 .click(function(event){}) (1)、事件目标 event.target==this (2)停止事件冒泡 event.stopPropagation() (3)阻止默认操作   9、事件委托 .on("事件"，顶层元素，回调函数)  然后用event.target限制触发目标  10、移除事件处理.off(事件名) 11、事件命名空间 
+12、重新绑定  13、模仿用户操作 （1）  .trigger(事件名) （2）键盘 （3）模拟鼠标
+
+四、样式和动画 1、获取/修改css $().css(属性，属性) 设置.css(属性，值)  .css({属性:值})  2、jq对象用变量缓存  不断改变值  3、多元素绑定同一事件，然后条件判断不同元素
+4、显示隐藏.hide（slow） 5、效果和时长 fast slow 毫秒 6、淡入淡出 .fadeIn() .fadeOut() 7、滑上滑下 .slideDown() .slideUp() 8、可见性切换 if else  .toggle() .slidetoggle() 8、手工创建效果.css() 9、自定义动画 .animate(css属性:值或{}，时长，平滑曲线，回调)  属性值可为变量    10/动态宽高 .outWidth() .borderWidth() 11、动态定位 12、并发和排队 （1）多个效果排队 .hide().show（） （2）越过队列  （3）手工队列   （4）多组元素上应用效果，会同时发生  
+
+五、DOM操作 1、操作元素属性class 2、 元素属性 $().attr("属性"，值)  或.attr({属性:值})   值可以是变量或者函数（返回值） 3、this指向元素 4、文本.text() 5、prop()和attr()区别:attr()包含自定义属性  6、表单值 .val("值")  7、DOM树操作（1）创建元素 $("<a>链接</a>") 2、插入新元素 $(创建) 添加到元素前后.insertAfter("选择器")  insertBefore("选择器")  添加到元素内.prependTo("选择器") .appendTo()   （3）移动元素 $(已有元素).insert() （4）包装元素  .wrapAll("<><>")  显式迭代 .each(function(index)  ) 
+（5）反向插入 $(插入目标).insert（被插元素） .append() .before()  回调函数    3、元素复制$().clone().insert()   4、修改和获取元素内容  文本.text() 内部html.html()  查找.find()   替换  .replaceWith() 移除.remove() 清空.empty()   
+
+六、Ajax 1、链接请求 <a href="url+查询字符串"> 2、事件请求 $(被点击的元素).click( function(){  $(显示数据的元素).load(  传回网页片段 )  } ) 3、传回json  最好用服务端生成 对象字面量，数组字面量  $.getJSON(本地文件名,回调function(data){})  4、遍历  $.each(data,     )  5、执行脚本$.getScript("本地.js")  6、加载XML $.get()  
+ 7、向服务器发送数据  php超全局变量 查询字符串 8、$.get(url,{名:值，名:值}，function(data){响应数据}）  9、post  $.post("url"，请求数据，回调(data){})   10、元素$(显示响应数据的元素).load（url,请求数据）   11、表单序列化（表单项生成查询字符串）必须有name  12、请求状态   请求开始 .ajaxStart(function(){})   请求终止.ajaxEnd(回调) 请求错误.ajaxError(回调) 请求成功.load()  13、错误处理 $.post().done(回调)   .always() .fail()   .status状态码   14、给还未加入的元素绑定事件   动态绑定  事件委托 on("事件",元素，   回调)   15、安全限制 .eval()  .parseJSON()   (2)远程数据加载   注入<script>    <iframe>   jsonop   16、低级AJAX  $.ajax( {url:    success：function()  type:
+  }) (2)修改默认配置  setAJAX   17、加载部分html片段   
+
+
+九、高级选择符和遍历 1、动态筛选表格内容 :not() :has() :contains() :nth-child(n)  .not()   2、表格行  奇数:odd 偶数:even :nth-child(even)
+
+5、DOM遍历方法  相邻.next() 选择.find()   .end()  .addBack() 6、jq对象的属性 .context  .selector  .prevObject   
+
+十、高级事件   ajax  on()    不存在元素 事件委托  .closeset()   委托作用域          .on(事件1 事件2，选择器，回调)  早委托       
+自定义事件    无穷滚动  节流事件  扩展事件
+
+十一、高级效果1、.animate({CSS})  2、动画中止 .stop().animate()3、是否正在动画is(":ainimate")  4、全局效果属性$.fx  禁用全局效果 $.fx.off=true 5、效果默认时长 $.fx.spreeds      
+
+十二、高级DOM操作 （一）数据排序 1、表格行排序 2、服务器端排序 数据库排序  3、ajax回调排序   4、js排序 （1）包裹在链接 （2）数组排序 .sort()（3）DOM排序  转化为节点数组 $().get()  .index()   4、DOM中保存数据.data() 5、存储非字符串 6、改变排序方向 7、自定义数据 data-  8、JSON  9、高级属性操作 10、
+
+
+十三、高级AJAX
+
+1、JSONOP  $.ajax({dataType:'jsonop'}) 2、错误处理  3、XHR对象 4、承诺Promise  5、缓存响应  6、截流ajax请求（拦截）
+
+
+
+
+    

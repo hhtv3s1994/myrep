@@ -1,0 +1,80 @@
+一、语法<?php ?>  可插入html中任何位置 2、注释单行// 多行/**/
+二、变量 1、$变量名 2、 作用域 全局global 函数内部不能直接访问外部变量 3、静态变量 static 4、参数作用域
+
+三、输出 ehco 输出多个字符串 print 返回值1  print_r() var_dump()打印数组对象
+
+四、heredoc <<<EOF   EOF定界符
+
+五、数据类型 串 对象 整型 浮点 布尔 数组 空 资源（句柄）
+
+六、常量 define("常量名","常量值",true)
+
+七、字符串   连接点号 $s1.$s2  字符串长度strlen() 子串位置strpos(串，子串)
+
+八、运算符 1、算术 加减乘除模反  整除intdiv(10,3) 2、赋值 = += .= 3、递增递减  4、比较 大于 等于 == 绝对等于=== 不等于 绝对不等于 5、逻辑 与或非异或 6、数组运算符
++ 等于==   7、三元 逻辑式?　值１：值２
+
+九、条件 if(){}else{} elseif(){}   switch(值) {case 值:语句;break;case 值:语句;break;}
+
+十、循环 while do while  for  foreach
+
+十一、数组 =array(1,2,3)  1、类型索引数组，关联数组 2、元素类型，可以是任何类型 3、数组长度 count(组) 4、遍历for($i) $a[$i] 4、关联数组 array("键"=>"值")
+
+
+排序(会改变原数组) sort() 降序排序rsort() 关联值排序 asort() 关联键排序 ksort() 降序arsort() krsort()
+
+十二、超全局变量    所有变量$GLOBALS 服务器$_SERVER  表单请求$_REQUEST  $_POST $_GET 文件$_FILES 环境$_ENV $_COOKIE  $_SESSION
+
+十三、函数 定义function f($arg){}  调用
+
+十四、魔术变量 行号__LINE__  文件路径__FILE__  文件目录__DIR__   函数名（函数内） __FUNCTION__ 类名 __CLASS__   __TRAIT__   方法名__METHOD__ 命名空间__NAMESPACE__
+
+十五、命名空间 1、  namespace 空间名 避免冲突   2、子命名空间
+
+十六、类和对象 1、类定义 2、实例化对象 3、成员属性和属性方法 4、构造函数 5、析构函数 6、继承 7、访问控制 属性 方法  8、接口 9、常量 10、抽象类 11、静态 12、父类构造方法 13、最终类（不可继承）
+
+十七、表单   下拉菜单的值   复选框  多选下拉菜单    表单验证 必须 格式
+
+十八、日期 
+
+十九、包含
+
+二十、文件处理
+
+二十一、上传
+
+二十二、Cookie 设置cookie setcookie(名，值，时间) 取回值$_COOKIE["名"] 是否设置cookie isset()
+
+二十三、session  开启session_start()   读取和赋值$_SESSION[] 销毁session_destroy(名，值)
+
+二十四、邮件
+二十五、错误异常 1、die("提示字符")  2、自定义错误处理函数 function（错误等级,错误信息，错误文件名，错误行号，错误变量){}  3、设置自定义错误 set_errpr_handler（函数名）
+
+二十六、过滤器 1、过滤函数 单一变量filter_var(值,过滤器) 多个变量filter_var_array()    输入变量filter_input （输入类型，值，过滤器） 多个输入变量filter_input_array（） 2、过滤器(1)类别 验证过滤器（返回true,false）  sanlitize（删除非法字符返回字符串）（2） 整数过滤器, FILTER_VALIDATE_INT 字符串过滤器FILTER_SANITIZE_STRING回调过滤器FILTER_CALLBACK（3）输入类型 INPUT_GET
+3、验证选项 flag
+
+二十七、JSON
+
+二十八、Mysql
+
+二十九、正则表达式   preg_filter	执行一个正则表达式搜索和替换
+preg_grep	返回匹配模式的数组条目
+preg_last_error	返回最后一个PCRE正则执行产生的错误代码
+preg_match_all	全局正则匹配
+preg_match	正则匹配
+preg_quote	转义正则表达式字符
+preg_replace_callback_array	执行一个正则表达式搜索并且使用一个回调进行替换
+preg_replace_callback	执行一个正则表达式搜索并且使用一个回调进行替换
+preg_replace	执行一个正则表达式的搜索和替换
+preg_split	通过一个正则表达式分隔字符串
+
+三十、HTTP  
+
+三十一、FTP
+
+
+三十二、AJAX  1、 发送查询字符串   当准备状态变化，页面内容替换成响应文本 xhr.response
+压缩 图像
+  
+
+

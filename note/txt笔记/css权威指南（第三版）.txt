@@ -1,0 +1,42 @@
+继承 权重 元素1 类10 ID 100 style 1000    重要属性!import
+
+显示display: 块block 内联 inline列表list-item 无none 行内块inlineblock
+
+长度单位:绝对 像素 em rem  百分比 角度deg 梯度grad 弧度rad 时间微秒ms 频率Hz
+
+悬挂缩进（副缩进）  浮动图像   文本对齐:对齐html内容  内联图像对齐 
+
+空白white-space 多空格pre 不换行nowrap    行高： 继承缩放因子     
+
+垂直对齐（同行子元素） vertical-align:上标sup下标sub低端bottom顶端top中间middle百分比 文字间隔word-spacing 字母间隔 letter-spacing 文本转换 capitalize
+
+文本阴影text-shadow
+
+字体大小 xx-small x-small small medium large x-large xx-large 字体变形 font-varint:小型大写small-caps
+
+字体颜色 可继承 默认透明色transparent  背景色:内容和内边距
+
+
+
+七、基本视觉格式化   内容 内边距 外边距  上下左右 外边距  边框宽度   三角形     边距可以为0或负 
+
+正常流  替换元素（无边框边距）  非替换元素  水平格式化      0 100% auto   外边距+内边距+宽度=父元素   负外边距:左右拉  
+垂直格式化   负外边距:上下拉,正负外边距合并 外边距合并  元素重叠      居中:上下边距25%    auto=0     高度auto 
+
+
+列表项:标志位置       <span>作为图像标志
+
+
+行布局 非替换元素   匿名文本  em框  内容区 行间距 行内框 行框  行高（） 
+
+垂直对齐
+
+
+行高缩放因子   内外边距 上下不影响行高  左右       行内元素的属性 宽高 边框对行高无影响     替换元素宽高固定，可超出行框
+
+外边距透明 单边    流式页面
+
+可见性    最大宽度 最小   溢出 :滚动条  隐藏 剪裁 
+
+
+ 

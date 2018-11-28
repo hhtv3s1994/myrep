@@ -1,0 +1,15 @@
+键值对 原子:成功执行或完全不执行，回滚机制
+
+二、配置redis.conf 1、 守护进程  2、端口 默认6379 3、主机地址 4、闲置时间关闭连接
+5、
+
+三、数据类型 1、串(基本类型) set 键 值 /get 键   2、哈希HMSET 名 field1 键 field2值   hget 名 field1/ hget 名 field2  
+
+ 3、列表list  lpush  键 串1   lpush 键 串2 
+
+  4、集合set  sadd 键 成员   smebers 键 5、有序集合zset  zadd 键 分数 成员
+
+四、命令 1、启动 redis-cli -h 主机 -p 端口 -a 密码
+
+五、键管理  1、删除 del 键   2、序列化键 dump 键 3、键存在 exsists 键 4、过期时间 expire 键 时间 5、过期 expreat 键 时间戳 6、按模式找键 keys 模式 7、移动到库 
+

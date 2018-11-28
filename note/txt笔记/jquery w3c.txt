@@ -1,0 +1,4 @@
+函数$   匿名回调函数:function(){函数体}
+
+$(document).ready(回调) 或$(回调)
+

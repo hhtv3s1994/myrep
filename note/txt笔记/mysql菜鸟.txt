@@ -1,0 +1,20 @@
+建库 create database 库名;
+
+删库 drop database 库名;
+ 
+选库  use 库名
+
+数据类型  字节   超小整数tinyint 1 小整数smallint 2中整数mediuint3 整数int 4大整数bigint 8   浮点float 4 双精double 8    decimal
+日期data 3 时间time 3 年 year 1  日期时间datatime 8 时间戳timestamp
+
+字符串  定长char 255  变长varchar 65535 小二进制tinyblob  小文本tinytext 长二进制blob 长文本text 中二进制mediumblob 中文本mediumtext   极大二进制longblob  极大文本longtext 
+
+建表 creatr table 表名{列名1 数据类型 约束条件,}; engine= default charset=   
+
+约束条件:可有多个，违反会报错 非空not null 主键primary key 自增属性auto_increment 默认值default
+不重复 unique    检查check >0
+
+
+删表 drop table 表名
+
+

@@ -1,0 +1,180 @@
+js除了基本类型以外全部都是对象
+
+目标 自己 父窗口 顶层窗口 新窗口
+
+拦截器和重载
+
+回调函数经常会自带对象参数
+
+延迟脚本 异步脚本
+
+三、基本概念 1、严格模式 "use strict" 2、关键字和保留字 3、变量（1）类型可变（2）省略var，全局变量 4、类型 数字、字符串、数组、布尔、对象、函数、未定义、空 typeof 八进制0 十六进制0x 浮点e  非数字NaN 字符串转为数字 Number() parseInt() parseFloat()  转为字符串 toString() 14、字符字面量 对象类型 new Object() 对象是否有属性hasOwnProperty(属性)  是否是原型 isPropetyOf（对象） 是否可迭代属性 isEnumerable(属性)  6、操作符 位非not 位或or 位异或xor  >> <<   标签label 7、with(对象){语句}
+7、函数 （1）function(){} 命名函数，匿名函数 （2）参数 某个参数{argument[0]} 参数个数argument.length
+
+四、变量 1、基本类型 引用类型 2、对象属性创建 对象.属性=值  3、变量复制，基本类型复制值，引用类型复制指针  4、传参都是值传递（不会改变作为参数的外部变量）？5、数据类型typeof 变量  是否实例 变量 instanceof 对象   6、执行环境 作用域链  内部环境可访问外部的变量等 延长作用域链   7、ES5没有块级作用域，for if 里面的变量是全局  8、同名变量的查询顺序 内到外  9、垃圾收集原理 标记清除 引用计数  变量设为null手动解除引用
+
+五、引用类型（一） 对象类型Object 1、创建对象 （1）var obj=new Object()  （2）对象字面量var 对象名={属性：值,属性：值} （二）数组类型Array  1、创建 构造函数new Array(数组元素或者长度) 2、字面量表示 var 数组名=[元素]  3、长度 .length可设置 4、检测元素从属 元素 instanceof 数组 isArray() 5、转换为字符串 .toString() .toLocalString() valueOf() 6、栈方法 入栈.push（）返回长度    出栈.pop() 7、队列方法 .push() 出队 .shift()  8、重排序（改变原数组） 反转 .reverse() 排序.sort() .sort(比较函数)  9、操作方法（返回新数组） 数组连接 .concat() 数组分割.slice（1,4） 10、位置方法 .indexOf（元素） .lastIndexOf(元素)  12、迭代方法 .every() .forEach()  元素分别处理.map(函数)
+.filter() .some() 13、归并       数组连接为串 .join（）
+（三）日期对象 Date   1、当前日期 new Date() 2、指定日期 new Date() （1）直接日期 （2）Date.parse("日期") (3)Date.UTC 3、现在时间 Date.now() 4、转换为字符串  .toString 当地字符串.toLocalString()  valueOf() 5、日期格式化 日期.toDateString() 时间.toTimeString()6、获取日期和时间.getTime()  设置时间.setTime()  获取年.setFullYear()  月getMonth() 日getDay()  时getHours() 分 get Minite()秒 getSecond()
+（四） 正则对象 1、创建对象  var a="/模式/修饰符"  模式两边有定界符  2、属性 g标签 .global i标签 .ignoreCase 3、匹配方法 .exec(字符串)  返回匹配的串数组 [0]原串 [1]第一个匹配 每次exec()只返回一项 4、匹配测试 .test(串)  5、构造属性RegExp    RegExp.input  上次匹配 .lastMatch  上次模式.lastPattern  .leftContext  .rightContext .multiline 6、捕获组 RegExp.$1
+(五）函数对象Function 1、匿名函数赋值给变量  2、Function构造函数 new Function（"参","参","体") 3、函数可有多名字 4、没有重载 5、没有变量提升 6、可以作为参数和返回值
+7、内部属性（对象） （1）参数 arguments[] (2)this 8、函数对象属性 参数个数.length 原型.prototype   改变this作用域的调用 .apply() .call(对象，参数) 
+（六）包装类型对象 字符串 数字 布尔 （三者也有基本类型） 1、创建 new String(串) new Object(串/布尔/数字) new Boolean(true) 2、new Number(1) 转为字符串 .toString(进制)
+typeof  valueOf（）  转为小数表示.toFixed(进制) 自然数表示 toExponential()  3、字符串方法 访问字符 .charAt(索引） 返回字符编码.charCodeAt(索引)  4、字符串操作 拼接字符串.concat(串，串) 5、分割出子串 .slice(开始索引，结束索引） .substr(开始索引，下标) .substring(开始索引，长度） 索引和长度都可为负 6、字符串位置 .indexOf(字符)
+.lastIndexOf(字符) 查找起始  .indexOf(字符，起始)  7、清除首尾空格.trim() 8、大小写转换 .toLowerCase() toUpperCase() 6、模式匹配/串匹配 .match（模式）返回匹配数组 .length [0] .index  匹配搜索.search(模式或串)  匹配替换 .replace(模式或串，新串/函数)   字符序列 串分割成数组 .split(分隔符，串长) 9、字符串比较 .localeCompare(串) -1 0 1
+10、编码转换为字符串 String.fromCharCode(编码，编码，编码) （七）全局对象Global  1、isNaN() parseInt() parseFloat() 2、URI编码 encodeURI() encodeURIComponent() 3、执行字符串脚本eval（""） 
+ (八）数学对象Math 都是静态属性和方法  1、属性 自然数Math.E 圆周率.PI .LN2 .LN10 2、方法 最大值 .max(数，数)  四舍五入 .round（1） 随机数.random()  范围随机.selectFrom(1,10) 3、绝对值 .abs() .log() .sin() 自然数幂.exp（n）    
+
+六、面向对象 1、创建  new Object()  字面量{属性 方法:function(){} } 2、属性的特性 数据属性 （1）可配置性configurable 默认 （2）可枚举性 默认 (3)属性值 (4)可写入性writable    3、访问器属性需要自己定义    可配置性configurable 可枚举性 get:function(){} set  4、属性定义方法  Object.defineProperty(对象，属性名，{特性:特性值}） 定义多个属性 Object.defineProperties（对象，{属性1：{特性}，属性2：{特性} }）
+ 5、读取属性特性 Object.getOwnPropertyDescriptor(对象，属性) 返回特性对象  属性为.value .configutable .get   6、对象的创建 （1）工厂方法 {new Object();加上属性和值;返回对象}（2）构造函数  类名（参数）{this.属性=值（参数）}  然后new  对象.constructor=类   （3）对象 instanceof 构造函数 （4）普通调用构造函数时，属性加入其他对象
+7、原型模式   继承原型和构造原型 A.prototype是a的原型   显式原型和隐士原型
+（1）原型对象 .prototype  （2）原型属性  定义 A.protptype.属性=值   调用 ：对象.原型属性 （3）构造函数  A.prototype.constructor  (4) 是否原型 isPrototypeOf() （5）获取原型
+getPrototypeOf(对象)  （6）属性搜索从实例到原型 （7）实例不能重写原型 （8）属性是否原型 .hasOwnProperty(属性)  （9）属性存在（原型和实例）  属性 in 对象 （10）遍历对象
+属性for（变量 in 对象） （11）返回可枚举属性数组Object.keys(对象)  所有属性数组Object.getOwnPropertyNames(对象) （12）原型可以在创建实例后修改 （13）构造.property={属性：值} (14)原生对象的原型可修改
+8、继承（1）原型链
+
+
+七、函数表达式 1、函数声明 先调用后声明 2、函数表达式（匿名函数给变量引用） 必须先声明 2、argument.call(参数n-1)已废除 3 、闭包，内部"定义"的函数，匿名  4、闭包内部变量 (1)闭包的作用域 访问顺序 (2)闭包的this （3）外部函数的this 如何访问和调用 （4）返回闭包 5、立即执行函数（function(){})（） 定义和调用同时进行，可以调用匿名函数
+6、内存泄漏 7、模仿块级作用域（ES6无必要） 8、私有变量
+
+
+八章、BOM 1、窗口对象window 包括所有全局属性方法和浏览器属性 定义在window上可以delete 2、对象查询 window.未定义对象 3、窗口和框架  window.frames["框架name或者索引"]
+top.frames[] 从最外层开始 window从当前开始 parent.frame[] 上一层 4、坐标  (1)屏幕坐标 window.screenLeft screenTop screenX screenY (2)窗口移动 .moveTo(x,y）.moveBy()可为负值
+5、窗口大小 .innerWidth .outerWidth  客户区大小 document.docmentElement.clientWidth (2)调整窗口大小 .reszieTo/By(x,y)  6、打开窗口 （1）window.open(url,窗口或框架name，高宽打开位置等 ）  （2）新窗口对象 a=window.open（） （3）窗口对象方法 .resize（）.moveTo() 关闭窗口.close()   属性 打开者.opener  是否已关闭.closed（） 7、定时器 (1)延时器 setTimeOut(函数） 定时器对象 停止定时器 clearTimeOut(定时器对象) (2)间歇调用 setInterval(函数） clearInterval(定时器对象)
+8、对话框  (1)提示 alert()（2）警告 是否confirm()返回true/false（3）输入 prompt(提示，默认输入值) 返回输入值或null  8、window.find() .print()       9、本地对象 location (1)属性:端口port 主机和端口host 当前url href 查询字符串search 目录文件pathname 主机名hostname 协议 protocol  hash （2）位置操作 跳转location.assign(url)或location.href=url 重载locaton.reload()      10、navigator   11、screen 12 历史history  前进.forward 后退.back() 退到指定位置.go(数字或url)       
+  
+  
+十章、DOM 1、节点对象 节点类型:文档document，元素，注释，文本，元素属性（特性）     2、基础 一个节点对象的属性和方法 （1） 节点类型：.nodeType 节点类型 常量或者数字 
+（2）节点名.nodeName(3)节点值.nodeValue(4)节点关系 第n个子节点 .childNodes[n]或.childNodes.item(n)  子节点数 .length（注意是包括注释，文本之类的） 父节点 .parentNode
+兄弟节点 .previousSiling .next 第一个子元素.firstChild 最后的子元素 .lastChild  (5)节点操作 添加子节点到末尾 .appenChild(节点对象） 移除子节点.removeChild(子节点) 插入子节点.insertBefore(新节点，后一个子节点) 替换子节点.replaceChild(新，被换)  （6）克隆节点 .cloneNode(节点,true) 返回新节点 
+
+3、文档document （1）属性 类型 值 父节点 子节点 名  .childNodes[] .documentElement 即<html>   .body <body>  .doctype<!doctype> (2)文档信息 标题.title URL .url 域名 .referrer  (3)获取元素对象 按ID .getElemntByID（） 按标签名 getElementByTagName 返回类数组对象 [].length .item()  取得所有元素 *  按名字（name） .getElementByName() 返回名值关联数组  （4）特殊的元素集合  所有的链接
+.anchors 所有的表单 .forms  所有的图像 .images  （5）DOM支持检查 document.implementation.hasFeature("DOM功能"，"版本") (6)输出 document.write()
+4、元素对象 （1）属性 节点类型 节点名 节点值  ID .id 附加说明 .title  类 .className 方向 .dir  (2)获取元素属性值  getAttribute("属性"） （3）设置元素属性值 setAttribute("属性"，"值")  (4).attributes对象    第n个属性.item(n)  .setAttribute()  获取属性对象.getNameItem(属性名) （5）创建元素对象 document.createElement("元素名") 然后加入子节点和属性，最后绑定到其他元素  （6）子节点.childNodes[0]  
+5、文本对象 （1）方法 添加文本到文本尾.appendData("串") 删除一段文本 .delete(开始，长度) 插入 替换 截取 分割  长度.length (2)获取文本对象，即元素的某个子节点 (3)创建文本节点document.createTextNode("文本") （5）分割 .splitText()
+6、注释 7、 8、文档类型 document.doctype 9、文档片段   10、元素属性对象  很少使用
+
+11、DOM操作 （1）动态js (2)动态css（3）表格属性方法  （4）节点列表 节点图 html集合
+
+十一、DOM扩展 1、选择器API document.querySelector(css选择器)   .querySelectorAll（）返回类数组对象[] .item() 2、元素匹配  元素.matchSelector("选择器") 3、遍历 （只限元素）子元素个数   第一个子元素  前一个兄弟元素  4、类 (1) 按类名获取元素 document.getElementByClassName() (2)元素类名  .className 是一个类名对象  类个数  
+  .length  类名分割成数组.split()  之后join（） （3）类列表对象  元素.classlist 增加类.add(类名) 移除类.remove(类名) 是否包含.contains（） 5、焦点元素 document.activeElement  文档是否在焦点 document.hasFocus()     6、加载状态  document.readyState== 正在加载"loading" 已加载"complete   7、文档头 document.head 8、字符集
+document.charset=="UTF-8" 默认字符集 .defaultCharset  9、自定义元素数据属性 data-  元素.dataset.属性名="值"  10、HTML替换或查找（1）替换元素内容文本或html  元素.innerHTML="<p>"  
+（2）替换元素标签及内容 .outerHTML ()    11、HTML安全    window.tostaticHTML(html串)  12、HTML插入  13、滚动元素  元素.scrollIntoView() 14、专有扩展
+
+十二、DOM2 DOM3  1、XML命名空间   2、CSS样式  （1）元素.style.CSS属性名（短横改驼峰）  （2）全部CSS style.cssText CSS属性数.length  parentRule 
+
+3、元素大小   （1）偏移量 元素.offsetLeft  .offsetTop .offsetWidth .offsetHeight    .getElementTop() (2)客户区大小 元素.cilentWidth  (3)滚动大小  .scrollHeight
+4、遍历 节点迭代器
+5、范围
+
+十三、事件 1、 事件发生的时候会产生事件对象event，其中包含了事件的属性，可以作为事件处理函数的参数使用function(event)  2、 事件流 冒泡，捕获，在子元素触发的事件会同时作用在父元素上，只是父元素没绑定处理函数罢了。3、事件处理函数（监听器） 一般是匿名函数 on事件=函数 4、DOM2级 addEventLisener(事件，回调函数，false) 冒泡阶段 5、IE attachEvent(事件，回调) detachEvent() 6、事件对象 event   (1)属性 是否冒泡bubbles 是否可以取消默认 cancelable 当前处理元素currentTarget 事件目标target 细节.details 事件阶段 eventPhase  阻止默认事件 .preventDefault()  阻止冒泡.stopPropagation()  事件类型type        7、事件类型 UI 焦点 鼠标 键盘 滚轮 DOM变动 输入法  （1）UI 加载load
+卸载unload  调整大小resize  滚动 scroll  选择字符 select 出错error  (2)焦点 失焦blur  不冒泡聚焦focus  冒泡聚焦focusin focusout  (3)鼠标  单击click 双击dbclick 按下mousedown 松开mouseup 移入元素 mouseenter 移出元素mouseleave  鼠标移动 mousemove  移入mouseover 移出mouseout    事件属性event 鼠标坐标 客户区.clientX/Y 页面坐标.pageX/Y  屏幕坐标 .screenX IE: .body.ScrollLeft      功能键是否按下 event.ctrlKey .shiftKey altKey metaKey    相关元素 toElement 相关目标.relatedTarget   按下的键
+event.button 没有0左1右2同时3中4   细节  （4）滚轮mousewheel  滚动距离.wheelDelta 正负  （5）键盘 弹起keyup 按下keydown 按键keypress  文本输入textinput   键码event.keyCode   ASCLL  字符编码 .charCode  DOM3 .key "键名" .char  键位.location   文本输入.data  输入方法.inputMethod{键盘，手写，复制粘贴，拖放，输入法} (6)输入法事件   （7）节点变动事件   （8）上下文菜单（右键菜单）    阻止默认菜单  自定义显示隐藏自定义菜单  配合鼠标事件位置 （9）重加载之前 （10）DOM加载完执行 （11）元素加载状态改变readyStateChange （12）页面显示，隐藏  （13）URL变化时  hashchange 8、移动设备事件 (1)方向（2）触摸手势   9、内存和性能  10、模拟事件  创建事件 初始化 event属性  触发事件  （1）模拟键盘 （2）模拟鼠标
+
+
+十四、表单脚本 1、获取表单 getElement document.forms[] 2、表单属性 .charSet 请求地址.action 所有控件.elements 控件数length 请求类型methode  表单名name 3、方法 重置.reset() 提交.submit() 目标窗口.target  4、提交 type="submit" 图像按钮type="image" 验证阻止提交 event.preventDefault() 自动提交.submit() 5、重置 type="reset" 阻止重置  6、获取表单字段（控件）  .elements[索引或者name]   （字段）控件数 .length  控件元素的属性 值 .value 禁用.disabled 当前表单. form 类型.type 只读.readonly 控件方法
+聚焦.focus 失焦.blur()     控件事件 聚焦 focus失焦blur 变化change  失焦且变动时触发 7、文本框脚本  type="text"  显示字符数 size 最大长度maxlength 初始值 value 类型 （1）选择文本方法.select()   选择事件 select  取得选择文本 选择开始.selectionStart 选择末尾.selectionEnd (2)选择部分文本 .setSelectionRange(索引，索引)  8、过滤输入  （1）阻止keypress (2）过滤部分按键  字符编码 屏蔽ctrl (3)剪贴板 事件:复制前 beforecopy 复制中 copy 剪切前beforecut 剪切中 cut  粘贴前beforepaste 粘贴中paste 剪贴板数据
+window或event.clipboardData 返回剪贴对象 .getData() .setData() .clearData()   9、自动切换焦点 value.length==maxlength 另一个表单.focus() 10、HTML5约束API （1）必填required（2）输入类型 mail number url （3）数值范围 最大最小  属性加减 .stepUP() stepDown(10)  (4)输入模式（正则） （5）验证有效 .checkValidity() false无效    验证对象元素.validity  模式不匹配.patternMismatch 超出范围 小于范围 步长错误 超过长度 非mailurl 必须
+11、选择框脚本（1）<select>   属性方法  所有选项options[] 加入选项.add(新项，相关项)  移除选项.remove(项)  多项选择multiple 选中项的索引selectedIndex  值value（等于选中项值或者文本）  （2）选项<option> 属性方法  索引 .index 标签 .label 被选中 .selected  文本.text 值.value  (3)选择选项 .options[.selectedIndex ]   (4)选中指定项将.options[].selected改为true (5)添加选项 createElement 或者add （6)移除 removeChlid  .remove(索引) options[]=null;  (7)移动重排
+12、表单序列化  （手动变成查询字符串方便ajax使用） （1）原则：名值对编成url查询字符串 禁用的不发 发送选中的值 不发重置 和按钮  单击submit会发送提交按钮 type="image"
+（2）遍历表单 名/值   13、富文本编辑（论坛）所见即所得，能调整文本大小颜色图片等   (1)<iframe designMode="on">  (2)contenteditable属性  
+
+
+十五、Canvas
+
+
+十六、HTML5脚本编程 （一）跨文档消息传送（XDM内联框架和弹窗）
+
+（二）原生拖放
+
+（三）媒体元素  <video><audio> 1、源<source src> 2、属性 自动播放autoplay 缓冲时间buffered 缓冲字节bufferdBytes 平均下载速度 控制器 已循环次数currentLoop URL currentURL 已播放时间 currentTime  播放速度（倍数）defaultPlayBackRate 总时长duration 开始播放的位置start 是否完成ended 是否暂停paused 音量volunm 可否循环loop 是否静音muted 文件大小  准备状态readyState 3、事件 下载中断abort 准备状态变化  网络中断 速度改变 正在跳转 跳转成功 下载开始 正在下载 音量改变 开始播放 暂停pause 5、方法.play() .pause（） 6、浏览器支持 （四）历史状态管理 history.pushStage(状态对象，状态标题，相对url) 未跳转  url转变 haschange
+  
+十七、错误调试 1、被调试代码try{}  2、发生错误时，执行 catch(err){ }语句 3、错误对象  错误发生时产生的对象 err   属性 错误信息.message   4、必定执行finally{} 5、错误类型   运行错误 范围错误 参考错误 类型错误 语法错误 URI错误
+类型检查 instanceof 6、抛出错误（自定义错误） throw "字符"  或new 错误类  8、错误事件及回调 onerror=function(错误信息message，url,行号) 
+7、日志  8、控制台调试 console.error() .log() .info() .warn() (1)记录到页面上  （2） 抛出错误    9、常见错误
+
+
+十八、XML
+
+二十、JSON  1、JSON对象 var a={"名":"值" } 2、 索引  名值 3、值类型，简单值:串数布   对象  数组  匿名对象和匿名数组  4、同层，分层 数组中可以有对象，对象中可以有数组
+5、访问属性  数组[].属性   6、序列化 转为字符串 JSON.stringify(JSON对象)  字符串解析为JSON对象 （1）过滤选项 （2）解析选项
+
+二十一、Ajax和Comet  1、XHR对象  new XMLHttpRequest(); 2、 开启连接xhr.open(请求方法，url,异步)  发送请求 .send(数据)  收到响应后->响应文本xhr.responseText 响应XML.responseXML   状态.status  状态说明 .statusText    准备状态 .readystate 0未启动 1未发送 2已发送  3 部分接收 4 完成   3、HTTP头 设置请求头 set
+接受类型 接受字符集 接受编码 接受语言 Cookie 请求主机 Host  发出请求的URL 用户代理字符串    获取请求头属性.getResponseHeader(头属性名) 获取所有头信息 getAllResponseHeader()字符串 4、get请求  .open("get",url+查询字符串，true) 5、post请求   6、2级XHR  （1）表单序列化 data=new FormData(表单元素)或.append() （2）超时设定 .timeout=时间 超时事件 ontimeout=function()  （3）
+ 
+    
+
+
+基础
+
+延迟脚本 defer="defer"  异步async="async"
+
+语法
+标识符（变量） 关键字 保留字
+
+语句/表达式
+
+一、数据类型  1、基本类型:未定义undefined 空 null  字符串 布尔 数字 2、引用类型，包装类（字符串布尔数字）  3、typeof 变量 4、只声明不赋值就是undefined 5、空 强制对象引用为空 会返回object 6、布尔false 空串 0和NaN null undefied 7、浮点.0会转为整数 科学计数法 2.1e7 表示十的次方  8、数值范围 9、NaN不等于NaN  isNaN() 9、非数转为数布尔 null undefined 串 Number("") parseInt("")  10、转义 换行\n 回车\r 空格\b制表\t  11、字符串不能变，每次生成新串 12、对象，数，布尔转为字符串 .toString()
+
+二、语句 1、一元 自增减 2、位操作 位非~ 位与& 位或| 位异或^ 左移<<2 有符号右移 无符号右移 4、逻辑 与或非  5、算术 加减乘除余 6、关系> < = 7、相等 相等 不等 全等 
+
+8、if 9、for in  10、label 11、with 12、函数参数 都是值传参
+
+
+
+
+浏览器对象  navigator浏览器名 完整名 版本信息 编译版本 cookie是否启用 语言 cpu类型  系统平台 系统语言 系统默认语言  用户代理字符串   插件检测 
+
+九、客户端检测 1、能力检测 2、怪癖检测 3、用户代理检测navigator.userAgent
+4、识别（1）呈现引擎 （2）浏览器 （3）平台（4）系统版本（5）移动设备（6）游戏主机
+
+
+
+
+meta content name  视口viewport
+
+
+Canvas 1、<canvas> 宽高 是否支持 2、2D上下文 获取canvas元素 .getContext('2d') 3、填充和描边  （1）样式(颜色图片渐变)  描边样式.strokeStyle=""填充样式 .fillStyle 
+（2）矩形 填充.fillRect(x,y,宽,高) .strokeRect(x,y,宽,高) 清除.clear(x,y,宽，高)（3）路径  绘图游标 开始路径.beginPath() .arc(圆心x，心y，半径，起角，终角,逆时针true)
+绘图游标移动 moveTo(x,y)   从游标开始画弧线arcTo(x1,y1,x2,y2,半径)    从游标开始画贝塞尔曲线 bezierCurVeTo(控制点1x，控制点1y，控2x,控2y，x,y)  rect（x,y，宽，高）     绘制路径.closePath()  填充路径 .fill() 描边路径 .stroke（） 剪切.clip()
+4、绘制文本 .fillText(串，x,y,最大宽)  .strokeText() （2）上下文属性  文本字体.font 文本对齐.textAlign  文本基线.textBaseline
+5、变换  变换原点translate(x,y)  旋转 rotate(角度)  缩放.scale(x,y)  矩阵transform() .save() .restore()  
+6、绘制图像 1、获取图像元素 document.image[] 2、  .drawImage(图像，x,y,宽，高)  /(图像，x,y,宽，高,目标x,目y,目宽，目高)
+7、阴影 .shadowColor   .shadowOffsetX .shadowOffsetY shadowBlur  自动产生阴影 8、渐变，创建渐变对象，grandient=context.createLinearGradient(x1,y1,x2,y2)
+加入中间色grandient.addColorStop(1,"red")  使用渐变 .fillStyle=gradient   fillRect()    径向渐变（放射） .createRadialGradient(x1,y1,r1,x2,y2,r2) 起点圆和终点圆的圆心半径  9、模式（重复图像）pattern=context.createPattern(image,"repeat")  repeat-x   使用模式fillStyle=pattern   10、获取和修改某块图像数据  imageData=context.getImageData(x,y,宽，高)    （2）数据  宽 高   data[](包括所有像素点的rgba,4个一组)     11、合成 全局透明度 .globalAlpha   后绘制图像结合方式 .globalCompositionOperation  上方，交集 差集 后覆盖     12、Webgl  类型化数组ArrayBuffer    类型
+
+
+CROS
+跨域 1、图像Ping  2、JSONOP 3、Comet  4、服务器发送事件SSE  5、WebSocket
+
+
+常见错误  操作终止 无效字符 未找到成员 未知 语法 无资源
+
+，高级技巧:1、高级函数 （1）类型检测  valueof instanceof  （2) 安全作用域的构造函数  (3)惰性载入的函数   （4）函数绑定bind(函数，对象){闭包 return function(){ return 函数.apply（对象） }}  返回匿名闭包 （5）柯里化  2、防篡改对象 （1)不可扩展Object.preventExtensions（对象） （2）密封Object.seal(对象) （3）冻结 Object.freeze(对象)
+
+
+高级定时器
+1、 2、链式调用setTimeOut代替setInterval 3、 4、节流
+
+自定义事件
+
+
+拖放
+
+
+
+离线检测  navigator.onLine  
+应用缓存 appcache <html mainfest="缓存路径/缓存名.appcache/mainfest"   缓存对象applicationCache  属性.status 0无缓存 1闲置 2检查 3下载 4完成 5废弃  事件 查找更新checking 错误error 检查无变化noupdate 开始下载缓存downloading 下载中不断触发processing 下载完毕updateready 缓存完毕cached   方法update() 更新swapCache()  
+
+数据存储
+
+（一）1、cookie 域名绑定  响应头名 值 域 失效时间 2、document.cookie 3、js读写cookie  4、子cookie （二）sessionStorage 1、.setItem(名，值)  .属性名=值  遍历 .length .key()   for in    delete 属性   .removeItem()  (三)locationStorage   事件 storage=function(event)   event属性 domain  key  newValue oldValue   (四)浏览器数据库
+window.indexedDB(对象数据库)
+
+
+
+    
+
+
+navigator
+

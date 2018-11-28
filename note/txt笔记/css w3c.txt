@@ -1,0 +1,121 @@
+一、语法 选择器{属性1:值1 值2 值3 ;属性2}     
+
+多值逗号和空格:同类型值用逗号， 复合属性的多个值用空格
+
+
+二、样式表插入:1、外部<link rel="stylesheet"  type="text/css" href="" >  2 内联<p style> 3、插入 <style></style>
+
+三、选择器 1、元素 p      子元素选择 > 相邻兄弟（下一个）+     伪类： 聚焦:focus  第一个子元素:first-child  伪元素: 首行first-line  首字母first-letter  元素前  元素后
+
+分组选择器 p,a,h1,h2
+
+继承  子元素继承
+
+后代选择器 p a id选择器#id 类选择器 .class   
+
+属性选择器[title=W3School]  ~=  ^= $= *=
+
+选择器组合，p.class  
+
+
+
+四、背景 background 背景颜色-color: 背景图像-image:url()  背景重复(平铺)  -repeat: repeat xy重复，不重复 ; 背景定位:-position顶底左右中长度百分 背景关联background-attachment:fixed
+
+五、文本 前景色:color
+
+缩进text-intent 正负   对齐:-align 左中右 justify两端对齐 词间隔 word-spacing 正负 字母间隔 letter-spacing  字符转换-transform:无none 大小写(lower)uppercase 首字capitalize 文本装饰-decorate: 无 上下划线 over(under)line 穿过线 line-throught 闪烁blink    空白符white-space: normal pre nowrap pre-wrap pre-line 空格 换行 自动换行
+ 文本方向 direction：rtl ltr    行高:line-height数值百分比   
+
+
+六、字体 字体系列   font-family:字体1名，字体2名  通用字体系列Serif Sans-serif Monospace Cursive Fantasy  字体风格font-style:normal iltalic oblique 字体加粗font-weight normal bold 900  字体大小:像素em百分比
+
+
+七、链接 伪类 :未访问link 已访问visited 悬停hover 被点击active
+
+八、列表  列表类型 list-style-type 点disc圈circle 方 列表项图像list-style-image:url 列表标志位置 list-style-position
+
+
+九、表格 边框 border   合并边框border-collapse :collapse 表格宽高 文本对齐:水平对齐text-align 垂直对齐vertical-align  内边距  空单元
+
+十、轮廓 outline   样式outline-style   颜色:outline-color   宽度outline-width   可能的样式:无 点 虚线dashed 实线 双线 凹槽 凸槽 凹边 凸边
+
+
+十一、框模型：1、内容宽高 width height   2、内边距padding 3、外边距margin 4、边框（粗细）border    5、边距：顶底左右  数值百分比正负 6值复制左=右，上=下  7、外边距合并
+
+十二、边框：顶底左右    边框样式 border-style 无   边框宽度 border-width 长度thin 、medium（默认值） 和 thick。  边框颜色border-color  
+
+十三、定位：  1、文档流position:static 相对relative 绝对absolute 固定fixed  top bottom  left right    2、溢出overflow   3
+  剪裁clip:rect() 4 、 覆盖:z-index
+
+相对:占据原位  绝对：相对于父元素，脱离文档流
+
+十四、浮动：脱离文档流，只和浮动元素碰撞   float:left right  清理clear： left、right、both 
+
+十五、对齐  块级:自动外边距margin:auto   定位  浮动    
+
+十六、尺寸 宽高  行高 最大（小）宽度 最大（小）高度
+
+十七、显示 display:无 块 内联     鼠标光标 cursor  可见性      透明度（图片和框）opacity   
+
+
+导航
+
+
+下拉菜单
+
+提示工具tooltip
+
+图片回廊   
+
+精灵图片
+
+
+
+css3
+
+一、边框:  圆角border-radius:半径 盒阴影:box-shadow：  边框图片:-image   四边分开设
+
+二、背景: 多图片:image  图片大小 background-size 图片原点-origin：   背景剪裁-clip:
+
+三、渐变 1、gradient 线性渐变 linear-gradient(方向, 过渡色, 过渡色); 上下左右对角，角度值deg  rgba     2、作为背景  3、重复渐变repeating-linear-gradient() 百分比颜色
+4、径向渐变radial-gradient(中心，形状 尺寸，过渡色）   形状可以是circle 或ellipse   
+
+四、文本效果 1、文本阴影 text-shadow(x,y,模糊羽化距离，颜色) 2、给:before加阴影 3、卡片特效 4、文本溢出 5、文本换行 6、文本拆分换行 7、文本轮廓
+
+五、字体定义: @font-face{字体家族 源 字体粗细 字体拉伸  }
+
+六、2D转换:1、transform 2、转换函数 平移 translate（x,y)旋转rotate(30deg)  倾斜skew(x角度，y角度) 缩放scale(x倍数，y倍数)  矩阵 matrix（）
+
+七、3D转换1、Z轴 rotateX() rotateY()    透视效果perspective   backface-visibility 2、3D translate3d(x,y,z）
+
+八、过渡 transition 1、延时 -delay 2、持续时间 duration 3、过渡属性-property  4、时间曲线-timing-function  5、多项属性 
+
+九、动画 1、关键帧定义 @keyframes 桢名  {from{CSS属性}to{CSS属性} }  或者百分比 20%{CSS属性}  2、动画应用  animation:桢名 时长  3、动画属性 动画桢名-name 时间-duration 延时-delay 速度曲线 播放次数 逆向播放  运行或暂停
+
+十、多列  1、列数column-count 2、列间隙column-gap 3、列边框样式 column-rule-style 4、列边框颜色 column-rule-color边框宽度column-rule-width 5、元素跨列  column-span: all; 6、列宽 column-width 7、列填充
+
+十一、用户界面 1、可调整尺寸 resize:both;  2、框大小 box-sizing 3、轮廓偏移
+
+十二、CSS图片  1、圆角和圆形图像 border-radius:半径  2、缩略图 边框边距  3、响应式  百分比宽度和最大宽度 4、图片滤镜 5、文本定位 6、模态（modal）实现
+
+十三、按钮 1、内联块 边框 颜色 背景 边距 文本对齐 字体大小 圆角 2、悬停 3、阴影 4、禁用：透明 5、宽度 6、按钮组 7按钮动画
+
+十四、分页 1、li a   浮动  2、悬停效果 3、过渡 4、圆角 5、边框 6、间隔：外边距 7、居中  8、面包屑
+
+十五、框大小 box-sizing :边框盒border-box      
+
+十六:弹性盒子    1、弹性容器 display: flex; 方向flex-direction:左对齐 row 右对齐row-reverse 纵向排列column 反转纵向column-reverse   
+对齐内容justify-content 行头紧挨flex-start  行尾紧挨 flex-end 居中紧挨center 平均分布挨边space-between  平均分布不靠边 space-around
+
+纵轴对齐align-items:   flex-start | flex-end | center | baseline | stretch    元素换行 flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+
+
+2、弹性子元素
+
+排序 order   居中  纵轴对齐align-self :auto | flex-start | flex-end | center | baseline | stretch   空间分配flex
+
+
+十七、多媒体查询 @media not|only mediatype and (表达式) { CSS}
+
+
+
