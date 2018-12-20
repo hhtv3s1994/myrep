@@ -1,0 +1,70 @@
+如果命名是针对分栏啊，头啊，某个模块啊，  那么无法实现方便的复用
+
+多个css，模块拆分
+
+CSS分离应该有种架构，最小块到大块  mixin    
+
+
+
+
+
+通用属性类  。专门给模块命名
+header footer content nav  sidebar  column  left right center  loginbar 
+logo  banner  main   hot news menu  search  scroll   tab list  msg tips   register  guide  
+status  vote  title  link download   
+.red{color:red}
+.font10px{}
+.left{}
+
+布局思想：大部分是固定宽度  960   模块的自适应  固定布局很容易 
+2、固定和自适应的结合，页面不适应屏幕，但是内部适应于外层
+3、流式布局
+
+
+无cssrest  css重置是为了兼容， 为了多浏览器统一，把原有属性清0  margin0 padding0
+  
+
+最好是一个类一种   属性
+
+样式分离
+
+样式分离后  样式的类名就是样式本身
+
+css通用样式库
+
+如果分的粒度太细，有可能就 需要很多类名
+
+分离原则   一个样式。多个页面使用
+
+主流写法是以功能块为类命名  .topic_edit_box
+
+如果强行分离的话  把每行属性都分离出来？      .bg_red
+把每个属性单独分出来，不到50个css大小    但是html就要很多类，html会很长
+
+几十种属性，基础构成也是有限的 ，一半属性只用这样就够了
+
+所有的都分离是不行的，但是现在分离也是不够的    （如果使用混入呢？） 嵌套
+
+网页设计师：需要良好设计，统一边距，字体大小，页面统一感
+
+避免名称冲突，使用前缀
+
+不使用层级，不使用id ,不使用标签：p  a
+缩减，css的名字长度  
+
+三、对于大量标签使用同一样式 ，每个都class里面加上，是否很麻烦？   偶尔使用层级怎么样？
+四、短属性：
+
+
+.tr
+
+.l{float:left;}.r{float:right;}.cl{clear:both;}
+.tc{text-align:center;}.tr{text-align:right;}.tl{text-align:left;}
+.tdl{text-decoration:underline;}.tdn,a.tdl:hover,a.tdn:hover{text-decoration:none;}
+.b{font-weight:bold;}.n{font-weight:normal; font-style:normal;}
+.vm{vertical-align:middle;}.vtb{vertical-align:text-bottom;}.vt{vertical-align:top;}.vn{vertical-align:-2px;}
+.fa{font-family:arial;}.ft{font-family:tahoma;}.fw{font-family:"微软雅黑"}.fs{font-family:'宋体';}
+.rel{position:relative;}.abs{position:absolute;}.ovh{overflow:hidden;}
+.dn{display:none;}.db{display:block;}.dib{display:inline-block;}.di{display:inline;}
+.cur{cursor:pointer;}
+
