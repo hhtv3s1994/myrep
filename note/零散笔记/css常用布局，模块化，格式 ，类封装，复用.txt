@@ -9,7 +9,7 @@
 
 css和html格式上表示出嵌套关系，缩进  css本身也要模块化  同类放一起
 
-多元素居中 行内块 text-align    
+多元素居中 行内/块 text-align    
 块元素居中margin:0 auto
 
 
