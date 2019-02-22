@@ -1,0 +1,129 @@
+游戏  后端 前端 界面 安卓  语言 库 框架api  三方库 界面  特效
+网络api 微信   内核api等
+网络接口  网页css类名 
+网络url的接口名
+
+各种api 函数 变量名 常量名 参数名 对象名 数组名 属性名 局部全局变量
+
+substring 子串   项目project
+变量variable
+split 分割  suspend挂起
+pad填充   margin边缘   promise承诺
+箭头arrow  函数function  
+进程process  过程procedure
+例程routine 子程序subroutine 返回return
+排列rank
+参数argument  静态static
+依赖depend   
+打印print 回显echo  
+同步sync hronization  异步async hronous
+
+
+修饰符modifier  访问控制access control
+
+实例instance 例子example
+medium中等的  枚举enumerate 列举
+注释comment
+非数nan  有限   无限infinity
+新建new  易失volatile   超类super  子类sub
+ 封装Encapsulation 继承Inheritance 多态polym
+Dynamic动态
+修改modified
+状态state  行为behavior  字段
+模板 
+局部local  成员member 变量
+对象object  
+方法method  
+赋值assignment  声明statement state也是状态   statement语句    status    定义define
+比较compare 
+concat combine  块chunk
+继承,扩展extends
+行row   列colunm  差异diff  difference
+计数count
+交集intersect   关联assoc associcate
+
+合并merge 归并
+乘积product  不重复unique
+ 多种，多重multi
+选项option 
+当前current present  工作目录work directory
+
+报告report   中止abort
+高亮highlight
+运行字符串eval
+
+语法syntax
+打包pack  轨迹track
+图例legend  传说
+添加append   
+
+数位digit
+加add 减substract 乘multiply 除divide 
+商quotient  因子  取模modulo  mod
+余remain  remainer rem
+关系relation  运算符operator
+左移  右移
+与 或 非
+
+逻辑运算符  逻辑与 逻辑非 逻辑或
+
+开关选择switch
+
+线程  thread 
+线程安全
+缓冲(区)buffer     
+替换replace 反转reverse 删除delete 追加append 插入insert 容量capacity
+索引index
+
+输入流inputstream  输出流outstream  io来自文件  
+
+传输控制协议tcp 
+用户数据报协议  udp  proto
+
+应用application  内核kernel 
+信息框messageBox
+
+字符串指针lpstr  字符串常量lpcstr
+参数param  lparam wparam
+
+消息  命令command
+
+全局global 局部local 描述符descriptor
+表table   段segment   字word  双字dword
+映射map   权限级别privilege level
+入口点entry point
+窗口window  附加attach  活动的active
+进程id
+
+标识符，唯一编码  identity identifier id
+断点breakpoint 模块module  单步single step    陷阱trap
+
+消息断点
+
+md5消息摘要
+
+逆元
+
+
+division div   spa
+发送 emit
+
+错误栈信息
+
+damp, anchor,
+
+ctl
+掩码mask
+交互interaction
+
+
+虚拟机 virtual machine vm
+
+utils  共享share  uid   当触发事件 onXXX   is  处于IN  信息info  desc  
+
+唯一标识符 id  上下文（环境）context  长度len 数据data
+
+层layer 弹出层
+layui ,element bootstrap
+
+窗口 状态栏 小部件
